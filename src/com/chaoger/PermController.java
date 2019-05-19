@@ -74,46 +74,57 @@ public class PermController {
 
     public static void main(String[] args) {
 
-        String express = "statDate>=nowTime&&statDate-nowTime<=2592000000";
+        String prefix = "statDate>=nowTime&&statDate-nowTime<=";
+        long day = 24*3600*1000L;
+        String express = geneExpress(prefix, 30L, day);
+
+        System.out.println(express);
         Map<String,Long> map = new HashMap<>();
-        map.put("statDate",System.currentTimeMillis());
+        map.put("statDate",System.currentTimeMillis()+292000001L);
         map.put("nowTime",System.currentTimeMillis());
 
 
+        System.out.println(getExpressResult(express,map));
+
+
+        System.out.println(getExpressParam(express,"<=",day));
+
+
+    }
+
+    private  static Boolean getExpressResult(String express,Map<String,Long> map){
 
         for (String key : map.keySet()) {
-             express = express.replace(key, String.valueOf(map.get(key)));
+            express = express.replace(key, String.valueOf(map.get(key)));
         }
-
-
-
-
         System.out.println(express);
-
-        Long dayOfMs = 24*3600*1000L;
-        System.out.println(getExpressParam(express,"<=",dayOfMs));
-
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("JavaScript");
 
         Object result = null;
         try {
-             result= engine.eval(express);
+            result= engine.eval(express);
         } catch (ScriptException e) {
             e.printStackTrace();
         }
-        System.out.println(result);
-    }
+        return (Boolean) result;
 
-    private  static Boolean getExpressResult(String express,Long statDate,Long nowTime){
-
-        return true;
     }
 
     private  static long getExpressParam(String express,String op,Long factor){
 
         String[] split = express.split(op);
         return Long.valueOf(split[1])/factor;
+
+
+    }
+
+
+
+    private  static String geneExpress(String prefix,Long value,Long factor){
+
+
+        return prefix+value*factor;
 
 
     }
