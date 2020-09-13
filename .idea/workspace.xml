@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/chaoger/algori/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/PermController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/helloMac/com/chaoger/PermController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/helloMac/com/chaoger/PermController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/NewPermAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermDateVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermFieldAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermKeyAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/struct/linked/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/struct/stack/MainStack.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,162 +25,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/struct/stack/MainStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/NewPermAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-              <folding>
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermDateVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermFieldAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-              <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermKeyAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="23" column="1" selection-start-column="2" selection-end-line="23" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6195">
+            <state relative-caret-position="8240">
               <caret line="413" column="12" selection-start-line="413" selection-start-column="12" selection-end-line="413" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helloMac.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="2636" column="40" selection-start-line="2636" selection-start-column="40" selection-end-line="2636" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -178,14 +68,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>get</find>
+      <find>s.charAt(i) == '('</find>
+      <find>spiralOrder</find>
+      <find>uniquePathsWithObstacles</find>
+      <find>mergeTwoLists</find>
+      <find>output</find>
+      <find>LinkedList&lt;Integer&gt;</find>
+      <find>combinationSum2</find>
+      <find>removeDuplicates</find>
+      <find>permuteUnique</find>
+      <find>int n</find>
+      <find>int n =</find>
+      <find>main(String[] args</find>
+      <find>main</find>
+      <find>public static void main(</find>
+      <find>public static void main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,13 +108,18 @@
         <option value="$PROJECT_DIR$/src/com/chaoger/PermDateVO.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/PermController.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PreToAfterUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/RNP.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="582" />
+    <option name="y" value="94" />
+    <option name="width" value="1064" />
+    <option name="height" value="646" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,19 +148,20 @@
               <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
               <item name="helloMac" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chaoger" type="462c0819:PsiDirectoryNode" />
+              <item name="algori" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558267836819" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599990896303" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -266,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PermController">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="helloMac" />
@@ -290,8 +200,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PreToAfterUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chaoger.PreToAfterUtil" />
+      <module name="helloMac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chaoger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RNP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chaoger.RNP" />
+      <module name="helloMac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chaoger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chaoger.algori.Solution" />
+      <module name="helloMac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chaoger.algori.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.RNP" />
+        <item itemvalue="Application.PreToAfterUtil" />
         <item itemvalue="Application.PermController" />
         <item itemvalue="Application.Main" />
       </list>
@@ -316,12 +268,58 @@
       <workItem from="1554108069894" duration="110000" />
       <workItem from="1555221912099" duration="2780000" />
       <workItem from="1555308366125" duration="3222000" />
-      <workItem from="1558261371898" duration="6131000" />
+      <workItem from="1558261371898" duration="6801000" />
+      <workItem from="1559180204734" duration="68000" />
+      <workItem from="1568455648284" duration="1627000" />
+      <workItem from="1568539421280" duration="603000" />
+      <workItem from="1568690323299" duration="21000" />
+      <workItem from="1587346003428" duration="2432000" />
+      <workItem from="1587389590871" duration="160000" />
+      <workItem from="1587866453810" duration="2648000" />
+      <workItem from="1587962757479" duration="2977000" />
+      <workItem from="1587980923468" duration="316000" />
+      <workItem from="1588040310243" duration="2773000" />
+      <workItem from="1588053737131" duration="36000" />
+      <workItem from="1588066402808" duration="723000" />
+      <workItem from="1588125870724" duration="7436000" />
+      <workItem from="1588211629012" duration="788000" />
+      <workItem from="1588325291625" duration="1433000" />
+      <workItem from="1588468973300" duration="3963000" />
+      <workItem from="1588645383432" duration="2870000" />
+      <workItem from="1588669457421" duration="13683000" />
+      <workItem from="1588918540921" duration="1973000" />
+      <workItem from="1588987581508" duration="4985000" />
+      <workItem from="1589161958642" duration="1055000" />
+      <workItem from="1589339403046" duration="2100000" />
+      <workItem from="1589618620784" duration="4414000" />
+      <workItem from="1589705218293" duration="3415000" />
+      <workItem from="1589765357096" duration="5143000" />
+      <workItem from="1589851204680" duration="10021000" />
+      <workItem from="1589950376284" duration="2335000" />
+      <workItem from="1590027733799" duration="1511000" />
+      <workItem from="1590288736216" duration="2360000" />
+      <workItem from="1590370580918" duration="8352000" />
+      <workItem from="1590977677795" duration="383000" />
+      <workItem from="1592892364368" duration="1014000" />
+      <workItem from="1592969046175" duration="708000" />
+      <workItem from="1593136054708" duration="1000" />
+      <workItem from="1593310796690" duration="8000" />
+      <workItem from="1594297739232" duration="595000" />
+      <workItem from="1594348535786" duration="8000" />
+      <workItem from="1594350747786" duration="1004000" />
+      <workItem from="1594644588194" duration="826000" />
+      <workItem from="1594689541788" duration="1047000" />
+      <workItem from="1594816947198" duration="240000" />
+      <workItem from="1594817381706" duration="135000" />
+      <workItem from="1594862976822" duration="3407000" />
+      <workItem from="1598873671952" duration="1685000" />
+      <workItem from="1599464929288" duration="4895000" />
+      <workItem from="1599989441212" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22031000" />
+    <option name="totallyTimeSpent" value="132099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,10 +331,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="582" y="94" width="1064" height="646" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13233191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -345,17 +343,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4493976" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6023222" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32805756" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32650602" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2987952" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32510886" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -365,6 +363,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,29 +409,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/chaoger/PermController.java</url>
-          <line>74</line>
-          <properties class="com.chaoger.PermController" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/com/chaoger/list.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/struct/linked/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -468,26 +446,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6195">
-          <caret line="413" column="12" selection-start-line="413" selection-start-column="12" selection-end-line="413" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloMac.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="23" column="1" selection-start-column="2" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/struct/stack/MainStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
+        <state relative-caret-position="1695">
           <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -495,41 +456,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermKeyAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/NewPermAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermFieldAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PreToAfterUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1420">
+          <caret line="78" column="78" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/RNP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3940">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="1" selection-start-column="2" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloMac.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61120">
+          <caret line="3127" column="23" selection-start-line="3127" selection-start-column="23" selection-end-line="3127" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3740">
+          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55660">
+          <caret line="2866" column="4" selection-start-line="2866" selection-start-column="4" selection-end-line="2866" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermDateVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="160">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#231#232#0" expanded="true" />
@@ -551,59 +540,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/NewPermAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermFieldAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
             <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/PermKeyAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
+        <state relative-caret-position="120">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8240">
+          <caret line="413" column="12" selection-start-line="413" selection-start-column="12" selection-end-line="413" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="2636" column="40" selection-start-line="2636" selection-start-column="40" selection-end-line="2636" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
         </state>
       </provider>
     </entry>
