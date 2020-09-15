@@ -103,29 +103,30 @@ public class ArraySolution {
 
     /**
      * 下一个排列:实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
+     *
      * @param nums
      */
     public void nextPermutation(int[] nums) {
         //1.第一个降序的index
         int len = nums.length;
-        int i = len-2;
-        while (i>=0&&nums[i]>=nums[i+1]){
+        int i = len - 2;
+        while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
         }
         //2.交换刚好大于降序元素的index
-        if(i>=0){
-            int j = len-1;
-            while (j>=0&&nums[j]<=nums[i]){
+        if (i >= 0) {
+            int j = len - 1;
+            while (j >= 0 && nums[j] <= nums[i]) {
                 j--;
             }
-            swap(nums,i,j);
+            swap(nums, i, j);
         }
 
         //3.翻转后面的顺序
-        int begin = i+1;
-        int end = len-1;
-        while (begin<end){
-            swap(nums,begin,end);
+        int begin = i + 1;
+        int end = len - 1;
+        while (begin < end) {
+            swap(nums, begin, end);
             begin++;
             end--;
         }
@@ -133,9 +134,81 @@ public class ArraySolution {
 
     }
 
-    public void swap(int[] nums,int i,int j){
+    public void swap(int[] nums, int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
+    }
+
+    /**
+     * 搜索旋转排序数组:假设按照升序排序的数组在预先未知的某个点上进行了旋转。
+     * ( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。
+     * 搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
+     * 你可以假设数组中不存在重复的元素。
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int search(int[] nums, int target) {
+        //1.比较是否命中了前面的升序区间
+        //2.比较是否命中了前面的升序区间
+        if (nums == null || nums.length <= 0) return -1;
+        int n = nums.length;
+        int begin = 0;
+        int end = n - 1;
+        while (begin <= end) {
+            int mid = (begin + end) / 2;
+            if (target == nums[mid]) return mid;
+            if (nums[0] <= nums[mid]) {
+                if (target >= nums[0] && target < nums[mid]) {
+                    end = mid - 1;
+                } else {
+                    begin = mid + 1;
+                }
+            } else {
+                if (target > nums[mid] && target <= nums[n - 1]) {
+                    begin = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
+            }
+        }
+        return -1;
+
+    }
+
+
+    /**
+     * 在排序数组中查找元素的第一个和最后一个位置:
+     * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] searchRange(int[] nums, int target) {
+        int[] res = new int[]{-1,-1};
+        if(nums==null||nums.length==0) return res;
+        int begin = 0;
+        int end = nums.length-1;
+        int mid = -1;
+        while (begin<=end){
+            mid = (begin+end)/2;
+            if(target>nums[mid]){
+                begin = mid+1;
+            }else if(target<nums[mid]){
+                end = mid-1;
+            }else {
+                break;
+            }
+        }
+        if(begin>end) return res;
+        int first = mid;
+        int last = mid;
+        while (first>=0&&nums[first]==target) first--;
+        while (last<nums.length&&nums[last]==target) last++;
+        res[0] = first+1;
+        res[1] = last-1;
+        return res;
     }
 }
