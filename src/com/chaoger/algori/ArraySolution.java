@@ -182,33 +182,122 @@ public class ArraySolution {
     /**
      * 在排序数组中查找元素的第一个和最后一个位置:
      * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
+     *
      * @param nums
      * @param target
      * @return
      */
     public int[] searchRange(int[] nums, int target) {
-        int[] res = new int[]{-1,-1};
-        if(nums==null||nums.length==0) return res;
+        int[] res = new int[]{-1, -1};
+        if (nums == null || nums.length == 0) return res;
         int begin = 0;
-        int end = nums.length-1;
+        int end = nums.length - 1;
         int mid = -1;
-        while (begin<=end){
-            mid = (begin+end)/2;
-            if(target>nums[mid]){
-                begin = mid+1;
-            }else if(target<nums[mid]){
-                end = mid-1;
-            }else {
+        while (begin <= end) {
+            mid = (begin + end) / 2;
+            if (target > nums[mid]) {
+                begin = mid + 1;
+            } else if (target < nums[mid]) {
+                end = mid - 1;
+            } else {
                 break;
             }
         }
-        if(begin>end) return res;
+        if (begin > end) return res;
         int first = mid;
         int last = mid;
-        while (first>=0&&nums[first]==target) first--;
-        while (last<nums.length&&nums[last]==target) last++;
-        res[0] = first+1;
-        res[1] = last-1;
+        while (first >= 0 && nums[first] == target) first--;
+        while (last < nums.length && nums[last] == target) last++;
+        res[0] = first + 1;
+        res[1] = last - 1;
         return res;
     }
+
+    /**
+     * 组合总和:给定一个无重复元素的数组 candidates 和一个目标数 target ，
+     * 找出 candidates 中所有可以使数字和为 target 的组合。
+     * @param candidates
+     * @param target
+     * @return
+     */
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        List<List<Integer>> res = new ArrayList<>();
+        backTraceCombinationSum(res,candidates,target,new ArrayList<>());
+        return res;
+
+    }
+
+    public void backTraceCombinationSum(List<List<Integer>> res,int[] candidates,int target,List<Integer> list){
+        if(target<0){
+            return;
+        }
+        if(target==0){
+            res.add(new ArrayList<>(list));
+        }
+        for (int candidate : candidates) {
+            list.add(candidate);
+            if(list.size()>1&&candidate<list.get(list.size()-2)){
+                list.remove(list.size()-1);
+                continue;
+            }
+            backTraceCombinationSum(res,candidates,target-candidate,list);
+            list.remove(list.size()-1);
+        }
+    }
+
+
+    /**
+     * 旋转图像:给定一个 n × n 的二维矩阵表示一个图像。
+     *
+     * 将图像顺时针旋转 90 度。
+     * @param matrix
+     */
+
+    public void rotate(int[][] matrix){
+
+        //1.主对角线互换
+        int n = matrix.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = tmp;
+            }
+        }
+
+        //2.纵向对称互换
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <n/2; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[i][n-1-j];
+                matrix[i][n-1-j] = tmp;
+            }
+
+        }
+
+    }
+
+
+    /**
+     * 最大子序和:给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+     * @param nums
+     * @return
+     */
+    public int maxSubArray(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+            max = Math.max(sum,max);
+            if(sum<0){
+                sum = 0;
+            }
+        }
+        return max;
+
+    }
+
+
+
 }
