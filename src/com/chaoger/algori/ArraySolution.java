@@ -5,10 +5,7 @@ import java.util.*;
 public class ArraySolution {
 
 
-    public static void main(String[] args) {
 
-
-    }
 
     //
 
@@ -299,5 +296,76 @@ public class ArraySolution {
     }
 
 
+    /**
+     * 跳跃游戏:给定一个非负整数数组，你最初位于数组的第一个位置。
+     * 数组中的每个元素代表你在该位置可以跳跃的最大长度。
+     * 判断你是否能够到达最后一个位置。
+     * @param nums
+     * @return
+     */
+    public boolean canJump(int[] nums) {
+        if(nums.length<=1) return  true;
+        int max = nums[0];
+        for (int i = 1; i <=max&&i<nums.length; i++) {
+            max = Math.max(max,i+nums[i]);
+        }
+        return max>=nums.length-1;
+
+    }
+
+
+    /**
+     * 合并区间:给出一个区间的集合，请合并所有重叠的区间。
+     * @param intervals
+     * @return
+     */
+    public int[][] merge(int[][] intervals) {
+        //1.先排序
+        if(intervals.length<=1) return intervals;
+        List<int[]> res = new ArrayList<>();
+
+        Arrays.sort(intervals,(a,b) -> a[0]-b[0]);
+
+        res.add(intervals[0]);
+
+        //2.再合并
+        for (int i = 1; i < intervals.length; i++) {
+            int[] last = res.get(res.size() - 1);
+            if(intervals[i][0]>last[1]){
+                res.add(intervals[i]);
+            }else {
+                last[1] = Math.max(last[1],intervals[i][1]);
+            }
+        }
+        return res.toArray(new int[0][]);
+
+    }
+
+
+    /**
+     *     *
+     * @param m
+     * @param n
+     * @return
+     */
+    public int uniquePaths(int m, int n) {
+        int[] arr = new int[n];
+        Arrays.fill(arr,1);
+        for (int i = 1; i <m; i++) {
+            for (int j = 1; j <n ; j++) {
+                arr[j]+=arr[j-1];
+            }
+        }
+        return arr[n-1];
+
+    }
+
+
+
+
+    public static void main(String[] args) {
+
+
+    }
 
 }
