@@ -418,6 +418,94 @@ public class ArraySolution {
 
     }
 
+    /**
+     * 子集:给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
+     * @param nums
+     * @return
+     */
+    int subsetsK = 0;
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        for (int i = 0; i <=nums.length; i++) {
+            backTraceSubsets(result,new ArrayList<>(),nums,0);
+            subsetsK++;
+        }
+        return result;
+
+    }
+
+    public void backTraceSubsets(List<List<Integer>> result,List<Integer> list,int[] nums,int first){
+        if(list.size()==subsetsK){
+            result.add(new ArrayList<>(list));
+            return;
+        }
+        for (int i = first; i < nums.length ; i++) {
+            list.add(nums[i]);
+            backTraceSubsets(result,list,nums,i+1);
+            list.remove(list.size()-1);
+        }
+
+    }
+
+    /**
+     * 单词搜索:给定一个二维网格和一个单词，找出该单词是否存在于网格中。
+     *
+     * 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+     * @param board
+     * @param word
+     * @return
+     */
+
+    int[][] existDirection = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
+    boolean[][] existMark ;
+
+    public boolean exist(char[][] board, String word) {
+        int m = board.length;
+        if(m==0) return false;
+        int n = board[0].length;
+        existMark = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(backTraceExist(board,word,0,i,j)){
+                    return true;
+                }
+            }
+        }
+
+        return false;
+
+    }
+
+    public boolean backTraceExist(char[][] board,String word,int start,int i,int j){
+
+        if(start==word.length()-1){
+            return board[i][j] == word.charAt(start);
+        }
+
+        if(board[i][j] == word.charAt(start)){
+            existMark[i][j] = true;
+            for (int k = 0; k < 4; k++) {
+                int x = existDirection[k][0]+i;
+                int y = existDirection[k][1]+j;
+                if(inArea(x, y, board)&&!existMark[x][y]){
+                    if(backTraceExist(board, word, start+1,x , y)){
+                        return true;
+                    }
+                }
+            }
+            existMark[i][j] = false;
+        }
+
+        return false;
+
+    }
+
+    private boolean inArea(int x,int y,char[][] board) {
+        int m = board.length;
+        int n = board[0].length;
+        return x>=0&&x<m&&y>=0&&y<n;
+    }
+
 
     public static void main(String[] args) {
 
