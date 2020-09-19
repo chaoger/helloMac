@@ -343,7 +343,10 @@ public class ArraySolution {
 
 
     /**
-     *     *
+     * 不同路径:一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
+     *
+     * 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）
+     *
      * @param m
      * @param n
      * @return
@@ -361,6 +364,59 @@ public class ArraySolution {
     }
 
 
+    /**
+     * 最小路径和:
+     * 给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
+     *
+     * 说明：每次只能向下或者向右移动一步。
+     * @param grid
+     */
+
+    public int minPathSum(int[][] grid) {
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if(i== 0&& j == 0){
+                    continue;
+                }else if(i==0 && j!=0){
+                    grid[0][j] = grid[0][j]+grid[0][j-1];
+                }else if(i!=0 && j==0){
+                    grid[i][0] = grid[i][0]+grid[i-1][0];
+                }else {
+                    grid[i][j] = grid[i][j] + Math.min(grid[i-1][j],grid[i][j-1]);
+                }
+
+            }
+        }
+
+        return grid[grid.length-1][grid[0].length-1];
+
+    }
+
+    /**
+     * 颜色分类:给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。
+     *
+     * 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
+     *
+     * @param nums
+     */
+    public void sortColors(int[] nums) {
+        int p0=0,cur = 0,p2 = nums.length-1;
+        while (cur<=p2){
+            int tmp = nums[cur];
+            if(nums[cur]==0){
+                nums[cur++] = nums[p0];
+                nums[p0++] = tmp;
+
+            }else if(nums[cur]==2){
+                nums[cur] = nums[p2];
+                nums[p2--]= tmp;
+            }else {
+                cur++;
+            }
+        }
+
+    }
 
 
     public static void main(String[] args) {
