@@ -507,6 +507,62 @@ public class ArraySolution {
     }
 
 
+    /**
+     *买卖股票的最佳时机:给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+     * 如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。
+     * @param prices
+     */
+    public int maxProfit(int[] prices) {
+        int profit = 0;
+        if(prices.length<=1) return profit;
+        int min = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            profit = Math.max(profit,prices[i]-min);
+            min = Math.min(min,prices[i]);
+        }
+        return profit;
+    }
+
+    /**
+     *  多数元素:给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
+     * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+     * @param nums
+     * @return
+     */
+    public int majorityElement(int[] nums) {
+        int count = 0 ;
+        int res = 0;
+        for (int num : nums) {
+            if(count==0){
+                res = num;
+            }
+            count+=(res==num)?1:-1;
+        }
+
+        return res;
+    }
+
+
+    /**
+     * 乘积最大子数组:给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组
+     * （该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
+     *
+     * @param nums
+     * @return
+     */
+    public int maxProduct(int[] nums) {
+        //其实就是正负号的问题
+        int maxF = nums[0],minF = nums[0],ans = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            int mx = maxF,mn = minF;
+            maxF = Math.max(nums[i],Math.max(nums[i]*mx,nums[i]*mn));
+            minF = Math.min(nums[i],Math.min(nums[i]*mx,nums[i]*mn));
+            ans = Math.max(ans,maxF);
+        }
+        return ans;
+
+    }
+
     public static void main(String[] args) {
 
 
