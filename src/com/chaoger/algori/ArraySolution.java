@@ -563,6 +563,88 @@ public class ArraySolution {
 
     }
 
+
+    /**
+     * 移动零：给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+     * @param nums
+     */
+    public void moveZeroes(int[] nums) {
+        int index = 0;
+        for (int num : nums) {
+            if(num!=0){
+                nums[index++] = num;
+            }
+        }
+        while (index<nums.length){
+            nums[index++] = 0;
+        }
+
+    }
+
+
+    /**
+     * 寻找重复数：给定一个包含 n + 1 个整数的数组 nums，其数字都在 1 到 n 之间（包括 1 和 n），
+     * 可知至少存在一个重复的整数。假设只有一个重复的整数，找出这个重复的数。
+     *
+     * @param nums
+     * @return
+     */
+    public int findDuplicate(int[] nums) {
+        int slow = 0, fast = 0;
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
+        slow = 0;
+        while(slow!=fast){
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return slow;
+    }
+
+    /**
+     * 找到所有数组中消失的数字:给定一个范围在  1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
+     *
+     * 找到所有在 [1, n] 范围之间没有出现在数组中的数字。
+     * @param nums
+     * @return
+     */
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            while (true){
+                if(nums[i]<=0||nums[i]>nums.length){
+                    nums[i] = 0;
+                    break;
+                }
+                if(nums[i] == i+1){
+                    break;
+                }else {
+                    if(nums[i]==nums[nums[i]-1]){
+                        nums[i]=0;
+                        break;
+                    }
+                    int tmp = nums[nums[i]-1];
+                    nums[nums[i]-1]  = nums[i];
+                    nums[i] =  tmp;
+
+                }
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i]==0){
+                res.add(i+1);
+            }
+        }
+        return res;
+
+    }
+
+
+
+
     public static void main(String[] args) {
 
 

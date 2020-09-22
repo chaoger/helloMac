@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="561" column="19" selection-start-line="554" selection-start-column="8" selection-end-line="561" selection-end-column="19" />
+            <state relative-caret-position="219">
+              <caret line="584" column="7" lean-forward="true" selection-start-line="584" selection-start-column="7" selection-end-line="584" selection-end-column="7" />
               <folding>
                 <element signature="method#twoSum#0;class#ArraySolution#0" />
                 <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -29,7 +30,18 @@
                 <element signature="method#backTraceCombinationSum#0;class#ArraySolution#0" />
                 <element signature="method#rotate#0;class#ArraySolution#0" />
                 <element signature="method#maxSubArray#0;class#ArraySolution#0" />
+                <element signature="method#merge#0;class#ArraySolution#0" />
+                <element signature="method#uniquePaths#0;class#ArraySolution#0" />
                 <element signature="method#minPathSum#0;class#ArraySolution#0" />
+                <element signature="method#sortColors#0;class#ArraySolution#0" />
+                <element signature="method#subsets#0;class#ArraySolution#0" />
+                <element signature="method#backTraceSubsets#0;class#ArraySolution#0" />
+                <element signature="method#exist#0;class#ArraySolution#0" />
+                <element signature="method#backTraceExist#0;class#ArraySolution#0" />
+                <element signature="method#inArea#0;class#ArraySolution#0" />
+                <element signature="method#maxProfit#0;class#ArraySolution#0" />
+                <element signature="method#majorityElement#0;class#ArraySolution#0" />
+                <element signature="method#maxProduct#0;class#ArraySolution#0" />
               </folding>
             </state>
           </provider>
@@ -87,9 +99,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="781" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,14 +137,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600616737367" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600689692529" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -291,12 +304,13 @@
       <workItem from="1600330335019" duration="4404000" />
       <workItem from="1600346292015" duration="675000" />
       <workItem from="1600392920992" duration="2577000" />
-      <workItem from="1600480838380" duration="7179000" />
+      <workItem from="1600480838380" duration="7560000" />
+      <workItem from="1600652310912" duration="2742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158576000" />
+    <option name="totallyTimeSpent" value="161699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,10 +322,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14091559" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1423462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -328,7 +342,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32706222" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29036143" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.06531204" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32510886" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -385,6 +399,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java</url>
+          <line>321</line>
+          <properties class="com.chaoger.algori.ArraySolution" method="merge">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/com/chaoger/list.java" />
@@ -480,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="561" column="19" selection-start-line="554" selection-start-column="8" selection-end-line="561" selection-end-column="19" />
+        <state relative-caret-position="219">
+          <caret line="584" column="7" lean-forward="true" selection-start-line="584" selection-start-column="7" selection-end-line="584" selection-end-column="7" />
           <folding>
             <element signature="method#twoSum#0;class#ArraySolution#0" />
             <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -493,7 +521,18 @@
             <element signature="method#backTraceCombinationSum#0;class#ArraySolution#0" />
             <element signature="method#rotate#0;class#ArraySolution#0" />
             <element signature="method#maxSubArray#0;class#ArraySolution#0" />
+            <element signature="method#merge#0;class#ArraySolution#0" />
+            <element signature="method#uniquePaths#0;class#ArraySolution#0" />
             <element signature="method#minPathSum#0;class#ArraySolution#0" />
+            <element signature="method#sortColors#0;class#ArraySolution#0" />
+            <element signature="method#subsets#0;class#ArraySolution#0" />
+            <element signature="method#backTraceSubsets#0;class#ArraySolution#0" />
+            <element signature="method#exist#0;class#ArraySolution#0" />
+            <element signature="method#backTraceExist#0;class#ArraySolution#0" />
+            <element signature="method#inArea#0;class#ArraySolution#0" />
+            <element signature="method#maxProfit#0;class#ArraySolution#0" />
+            <element signature="method#majorityElement#0;class#ArraySolution#0" />
+            <element signature="method#maxProduct#0;class#ArraySolution#0" />
           </folding>
         </state>
       </provider>
