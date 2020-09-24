@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="662" column="21" selection-start-line="662" selection-start-column="21" selection-end-line="662" selection-end-column="21" />
+            <state relative-caret-position="266">
+              <caret line="748" column="65" lean-forward="true" selection-start-line="737" selection-start-column="8" selection-end-line="748" selection-end-column="65" />
               <folding>
                 <element signature="method#twoSum#0;class#ArraySolution#0" />
                 <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -40,11 +39,13 @@
                 <element signature="method#backTraceExist#0;class#ArraySolution#0" />
                 <element signature="method#inArea#0;class#ArraySolution#0" />
                 <element signature="method#maxProfit#0;class#ArraySolution#0" />
-                <element signature="method#majorityElement#0;class#ArraySolution#0" />
                 <element signature="method#maxProduct#0;class#ArraySolution#0" />
+                <element signature="method#majorityElement#0;class#ArraySolution#0" />
                 <element signature="method#moveZeroes#0;class#ArraySolution#0" />
                 <element signature="method#findDuplicate#0;class#ArraySolution#0" />
                 <element signature="method#findDisappearedNumbers#0;class#ArraySolution#0" />
+                <element signature="method#subarraySum#0;class#ArraySolution#0" />
+                <element signature="method#findUnsortedSubarray#0;class#ArraySolution#0" />
               </folding>
             </state>
           </provider>
@@ -104,7 +105,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="195" />
+    <option name="y" value="198" />
     <option name="width" value="1440" />
     <option name="height" value="781" />
   </component>
@@ -312,12 +314,12 @@
       <workItem from="1600652310912" duration="2742000" />
       <workItem from="1600742817811" duration="692000" />
       <workItem from="1600825373950" duration="1728000" />
-      <workItem from="1600910974978" duration="1715000" />
+      <workItem from="1600910974978" duration="3048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165834000" />
+    <option name="totallyTimeSpent" value="167167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,7 +331,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="781" extended-state="0" />
+    <frame x="195" y="198" width="1440" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14806867" />
@@ -349,7 +351,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32706222" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16690856" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.043541364" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32510886" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -515,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="662" column="21" selection-start-line="662" selection-start-column="21" selection-end-line="662" selection-end-column="21" />
+        <state relative-caret-position="266">
+          <caret line="748" column="65" lean-forward="true" selection-start-line="737" selection-start-column="8" selection-end-line="748" selection-end-column="65" />
           <folding>
             <element signature="method#twoSum#0;class#ArraySolution#0" />
             <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -538,11 +540,13 @@
             <element signature="method#backTraceExist#0;class#ArraySolution#0" />
             <element signature="method#inArea#0;class#ArraySolution#0" />
             <element signature="method#maxProfit#0;class#ArraySolution#0" />
-            <element signature="method#majorityElement#0;class#ArraySolution#0" />
             <element signature="method#maxProduct#0;class#ArraySolution#0" />
+            <element signature="method#majorityElement#0;class#ArraySolution#0" />
             <element signature="method#moveZeroes#0;class#ArraySolution#0" />
             <element signature="method#findDuplicate#0;class#ArraySolution#0" />
             <element signature="method#findDisappearedNumbers#0;class#ArraySolution#0" />
+            <element signature="method#subarraySum#0;class#ArraySolution#0" />
+            <element signature="method#findUnsortedSubarray#0;class#ArraySolution#0" />
           </folding>
         </state>
       </provider>
