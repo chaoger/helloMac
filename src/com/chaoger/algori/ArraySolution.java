@@ -643,6 +643,62 @@ public class ArraySolution {
     }
 
 
+    /**
+     * 和为K的子数组:给定一个整数数组和一个整数 k，你需要找到该数组中和为 k 的连续的子数组的个数。
+     * @param nums
+     * @param k
+     * @return
+     */
+    public int subarraySum(int[] nums, int k) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int total = 0,count = 0;
+        map.put(0,1);
+        for (int num : nums) {
+            total+=num;
+            if(map.containsKey(total-k)){
+                count+=map.get(total-k);
+            }
+            map.put(total,map.getOrDefault(total,0)+1);
+        }
+        return count;
+    }
+
+
+    /**
+     * 最短无序连续子数组:给定一个整数数组，你需要寻找一个连续的子数组，
+     * 如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
+     * 你找到的子数组应是最短的，请输出它的长度。
+     * @param nums
+     * @return
+     */
+    public int findUnsortedSubarray(int[] nums) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            if(nums[i]>nums[i+1]){
+                min = Math.min(min,nums[i+1]);
+            }
+        }
+
+        for (int i =nums.length - 1;i>0; i--) {
+            if(nums[i]<nums[i-1]){
+                max = Math.max(max,nums[i-1]);
+            }
+        }
+
+        int l, r;
+        for (l = 0; l < nums.length; l++) {
+            if (min < nums[l])
+                break;
+        }
+        for (r = nums.length - 1; r >= 0; r--) {
+            if (max > nums[r])
+                break;
+        }
+        return r - l < 0 ? 0 : r - l + 1;
+
+    }
 
 
     public static void main(String[] args) {
