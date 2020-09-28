@@ -28,6 +28,21 @@ public class ArraySolution {
         return null;
     }
 
+
+    
+    /**
+     * 寻找两个正序数组的中位数:给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。
+     * 请你找出这两个正序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
+     * @param A
+     * @param B
+     * @return
+     */
+    public double findMedianSortedArrays(int[] A, int[] B) {
+
+        // TODO: 2020-09-24  
+
+    }
+
     /**
      * 盛最多水的容器:给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。
      * 在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，
@@ -243,6 +258,39 @@ public class ArraySolution {
         }
     }
 
+
+    /**
+     * 接雨水：给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+     * @param height
+     * @return
+     */
+    public int trap(int[] height) {
+        Stack<Integer> stack = new Stack<>();
+        int n = height.length;
+        if(n<=2) return 0;
+        int res = 0;
+        int max = height[0];
+        for (int i = 1; i < n; i++) {
+            if(max<height[i]){
+                while (!stack.isEmpty()){
+                    res += max-stack.pop();
+
+                }
+                max = height[i];
+            }else {
+                stack.push(height[i]);
+            }
+        }
+        max = 0;
+        while (!stack.isEmpty()){
+            if(stack.peek()>max){
+                max = stack.pop();
+                continue;
+            }
+            res+=max-stack.pop();
+        }
+        return res;
+    }
 
     /**
      * 旋转图像:给定一个 n × n 的二维矩阵表示一个图像。
@@ -505,6 +553,15 @@ public class ArraySolution {
         int n = board[0].length;
         return x>=0&&x<m&&y>=0&&y<n;
     }
+
+
+    // TODO: 2020-09-25
+
+    // 柱状图中最大的矩形
+
+    // 最大矩形
+
+    // 从前序与中序遍历构造二叉树
 
 
     /**

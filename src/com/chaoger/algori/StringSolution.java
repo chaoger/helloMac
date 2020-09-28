@@ -57,4 +57,90 @@ public class StringSolution {
         }
         return right-left-1;
     }
+
+
+
+
+
+    /**
+     * 有效的括号:给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+     *
+     * 有效字符串需满足：左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。
+     * @param s
+     * @return
+     */
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if(c=='('||c=='['||c=='{'){
+                stack.push(s.charAt(i));
+            }else {
+                if(stack.isEmpty()){
+                    return false;
+                }
+                switch (c){
+
+                    case ')':
+                        if(stack.pop()=='('){
+                            continue;
+                        }else {
+                            return false;
+                        }
+
+                    case ']':
+                        if(stack.pop()=='['){
+                            continue;
+                        }else {
+                            return false;
+                        }
+
+                    case '}':
+                        if(stack.pop()=='{'){
+                            continue;
+                        }else {
+                            return false;
+                        }
+
+                    default:
+                        return false;
+
+                }
+            }
+        }
+
+        return stack.isEmpty();
+    }
+
+
+    /**
+     * 括号生成:数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+     * @param n
+     * @return
+     */
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        backTraceGenerateParenthesis(res,new StringBuilder(),0,0,n);
+        return res;
+
+
+    }
+
+    private void backTraceGenerateParenthesis(List<String> res,StringBuilder cur,int open,int close,int max){
+        if(cur.length()==max*2){
+            res.add(cur.toString());
+            return;
+        }
+        if(open<max){
+            cur.append("(");
+            backTraceGenerateParenthesis(res, cur, open+1, close, max);
+            cur.deleteCharAt(cur.length()-1);
+        }
+        if(close<open){
+            cur.append(")");
+            backTraceGenerateParenthesis(res, cur, open, close+1, max);
+            cur.deleteCharAt(cur.length()-1);
+        }
+    }
 }
