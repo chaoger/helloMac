@@ -1,7 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="581" column="19" lean-forward="true" selection-start-line="567" selection-start-column="8" selection-end-line="581" selection-end-column="19" />
+              <folding>
+                <element signature="method#twoSum#0;class#ArraySolution#0" />
+                <element signature="method#maxArea#0;class#ArraySolution#0" />
+                <element signature="method#threeSum#0;class#ArraySolution#0" />
+                <element signature="method#nextPermutation#0;class#ArraySolution#0" />
+                <element signature="method#search#0;class#ArraySolution#0" />
+                <element signature="method#searchRange#0;class#ArraySolution#0" />
+                <element signature="method#combinationSum#0;class#ArraySolution#0" />
+                <element signature="method#backTraceCombinationSum#0;class#ArraySolution#0" />
+                <element signature="method#trap#0;class#ArraySolution#0" />
+                <element signature="method#rotate#0;class#ArraySolution#0" />
+                <element signature="method#maxSubArray#0;class#ArraySolution#0" />
+                <element signature="method#canJump#0;class#ArraySolution#0" />
+                <element signature="method#merge#0;class#ArraySolution#0" />
+                <element signature="method#uniquePaths#0;class#ArraySolution#0" />
+                <element signature="method#minPathSum#0;class#ArraySolution#0" />
+                <element signature="method#sortColors#0;class#ArraySolution#0" />
+                <element signature="method#subsets#0;class#ArraySolution#0" />
+                <element signature="method#backTraceSubsets#0;class#ArraySolution#0" />
+                <element signature="method#exist#0;class#ArraySolution#0" />
+                <element signature="method#backTraceExist#0;class#ArraySolution#0" />
+                <element signature="method#inArea#0;class#ArraySolution#0" />
+                <element signature="method#maxProfit#0;class#ArraySolution#0" />
+                <element signature="method#maxProduct#0;class#ArraySolution#0" />
+                <element signature="method#majorityElement#0;class#ArraySolution#0" />
+                <element signature="method#productExceptSelf#0;class#ArraySolution#0" />
+                <element signature="method#moveZeroes#0;class#ArraySolution#0" />
+                <element signature="method#findDuplicate#0;class#ArraySolution#0" />
+                <element signature="method#findDisappearedNumbers#0;class#ArraySolution#0" />
+                <element signature="method#subarraySum#0;class#ArraySolution#0" />
+                <element signature="method#findUnsortedSubarray#0;class#ArraySolution#0" />
+                <element signature="method#leastInterval#0;class#ArraySolution#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="500" column="59" selection-start-line="500" selection-start-column="39" selection-end-line="500" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get</find>
+      <find>s.charAt(i) == '('</find>
+      <find>spiralOrder</find>
+      <find>uniquePathsWithObstacles</find>
+      <find>mergeTwoLists</find>
+      <find>output</find>
+      <find>LinkedList&lt;Integer&gt;</find>
+      <find>combinationSum2</find>
+      <find>removeDuplicates</find>
+      <find>permuteUnique</find>
+      <find>int n</find>
+      <find>int n =</find>
+      <find>main(String[] args</find>
+      <find>main</find>
+      <find>public static void main(</find>
+      <find>public static void main</find>
+      <find>findUnsortedSubarray</find>
+      <find>todo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/struct/linked/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/struct/stack/MainStack.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PermKeyAO.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PermFieldAO.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/NewPermAO.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PermDateVO.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PermMapEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PermController.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/PreToAfterUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/RNP.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algori" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601279017906" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601280997703" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.Solution">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -75,5 +258,251 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="" />
+      <created>1551613652821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551613652821</updated>
+      <workItem from="1551613656399" duration="1015000" />
+      <workItem from="1551665680204" duration="87000" />
+      <workItem from="1552375772757" duration="1407000" />
+      <workItem from="1552478041953" duration="1861000" />
+      <workItem from="1552561815010" duration="489000" />
+      <workItem from="1554004249020" duration="3395000" />
+      <workItem from="1554108069894" duration="110000" />
+      <workItem from="1555221912099" duration="2780000" />
+      <workItem from="1555308366125" duration="3222000" />
+      <workItem from="1558261371898" duration="6801000" />
+      <workItem from="1559180204734" duration="68000" />
+      <workItem from="1568455648284" duration="1627000" />
+      <workItem from="1568539421280" duration="603000" />
+      <workItem from="1568690323299" duration="21000" />
+      <workItem from="1587346003428" duration="2432000" />
+      <workItem from="1587389590871" duration="160000" />
+      <workItem from="1587866453810" duration="2648000" />
+      <workItem from="1587962757479" duration="2977000" />
+      <workItem from="1587980923468" duration="316000" />
+      <workItem from="1588040310243" duration="2773000" />
+      <workItem from="1588053737131" duration="36000" />
+      <workItem from="1588066402808" duration="723000" />
+      <workItem from="1588125870724" duration="7436000" />
+      <workItem from="1588211629012" duration="788000" />
+      <workItem from="1588325291625" duration="1433000" />
+      <workItem from="1588468973300" duration="3963000" />
+      <workItem from="1588645383432" duration="2870000" />
+      <workItem from="1588669457421" duration="13683000" />
+      <workItem from="1588918540921" duration="1973000" />
+      <workItem from="1588987581508" duration="4985000" />
+      <workItem from="1589161958642" duration="1055000" />
+      <workItem from="1589339403046" duration="2100000" />
+      <workItem from="1589618620784" duration="4414000" />
+      <workItem from="1589705218293" duration="3415000" />
+      <workItem from="1589765357096" duration="5143000" />
+      <workItem from="1589851204680" duration="10021000" />
+      <workItem from="1589950376284" duration="2335000" />
+      <workItem from="1590027733799" duration="1511000" />
+      <workItem from="1590288736216" duration="2360000" />
+      <workItem from="1590370580918" duration="8352000" />
+      <workItem from="1590977677795" duration="383000" />
+      <workItem from="1592892364368" duration="1014000" />
+      <workItem from="1592969046175" duration="708000" />
+      <workItem from="1593136054708" duration="1000" />
+      <workItem from="1593310796690" duration="8000" />
+      <workItem from="1594297739232" duration="595000" />
+      <workItem from="1594348535786" duration="8000" />
+      <workItem from="1594350747786" duration="1004000" />
+      <workItem from="1594644588194" duration="826000" />
+      <workItem from="1594689541788" duration="1047000" />
+      <workItem from="1594816947198" duration="240000" />
+      <workItem from="1594817381706" duration="135000" />
+      <workItem from="1594862976822" duration="3407000" />
+      <workItem from="1598873671952" duration="1685000" />
+      <workItem from="1599464929288" duration="4895000" />
+      <workItem from="1599989441212" duration="2144000" />
+      <workItem from="1600046642538" duration="4539000" />
+      <workItem from="1600134537682" duration="3544000" />
+      <workItem from="1600220420673" duration="2636000" />
+      <workItem from="1600330335019" duration="4404000" />
+      <workItem from="1600346292015" duration="675000" />
+      <workItem from="1600392920992" duration="2577000" />
+      <workItem from="1600480838380" duration="7560000" />
+      <workItem from="1600652310912" duration="2742000" />
+      <workItem from="1600742817811" duration="692000" />
+      <workItem from="1600825373950" duration="1728000" />
+      <workItem from="1600910974978" duration="8134000" />
+      <workItem from="1600996703555" duration="369000" />
+      <workItem from="1601081763660" duration="3831000" />
+      <workItem from="1601277842584" duration="1887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1097000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11448349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6023222" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32706222" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3069307" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32510886" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java</url>
+          <line>369</line>
+          <properties class="com.chaoger.algori.ArraySolution" method="merge">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4145">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="141" column="19" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="500" column="59" selection-start-line="500" selection-start-column="39" selection-end-line="500" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="581" column="19" lean-forward="true" selection-start-line="567" selection-start-column="8" selection-end-line="581" selection-end-column="19" />
+          <folding>
+            <element signature="method#twoSum#0;class#ArraySolution#0" />
+            <element signature="method#maxArea#0;class#ArraySolution#0" />
+            <element signature="method#threeSum#0;class#ArraySolution#0" />
+            <element signature="method#nextPermutation#0;class#ArraySolution#0" />
+            <element signature="method#search#0;class#ArraySolution#0" />
+            <element signature="method#searchRange#0;class#ArraySolution#0" />
+            <element signature="method#combinationSum#0;class#ArraySolution#0" />
+            <element signature="method#backTraceCombinationSum#0;class#ArraySolution#0" />
+            <element signature="method#trap#0;class#ArraySolution#0" />
+            <element signature="method#rotate#0;class#ArraySolution#0" />
+            <element signature="method#maxSubArray#0;class#ArraySolution#0" />
+            <element signature="method#canJump#0;class#ArraySolution#0" />
+            <element signature="method#merge#0;class#ArraySolution#0" />
+            <element signature="method#uniquePaths#0;class#ArraySolution#0" />
+            <element signature="method#minPathSum#0;class#ArraySolution#0" />
+            <element signature="method#sortColors#0;class#ArraySolution#0" />
+            <element signature="method#subsets#0;class#ArraySolution#0" />
+            <element signature="method#backTraceSubsets#0;class#ArraySolution#0" />
+            <element signature="method#exist#0;class#ArraySolution#0" />
+            <element signature="method#backTraceExist#0;class#ArraySolution#0" />
+            <element signature="method#inArea#0;class#ArraySolution#0" />
+            <element signature="method#maxProfit#0;class#ArraySolution#0" />
+            <element signature="method#maxProduct#0;class#ArraySolution#0" />
+            <element signature="method#majorityElement#0;class#ArraySolution#0" />
+            <element signature="method#productExceptSelf#0;class#ArraySolution#0" />
+            <element signature="method#moveZeroes#0;class#ArraySolution#0" />
+            <element signature="method#findDuplicate#0;class#ArraySolution#0" />
+            <element signature="method#findDisappearedNumbers#0;class#ArraySolution#0" />
+            <element signature="method#subarraySum#0;class#ArraySolution#0" />
+            <element signature="method#findUnsortedSubarray#0;class#ArraySolution#0" />
+            <element signature="method#leastInterval#0;class#ArraySolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
