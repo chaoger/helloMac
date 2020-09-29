@@ -1,6 +1,7 @@
 package com.chaoger.algori;
 
 import java.util.Arrays;
+import java.util.*;
 
 public class DpSolution {
 
@@ -9,6 +10,9 @@ public class DpSolution {
         int[] arr = new int[]{3,1,5,8};
         maxCoins(arr);
     }
+
+
+
     /**
      * 爬楼梯:假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
      *
@@ -29,6 +33,36 @@ public class DpSolution {
         return second;
 
     }
+
+
+    /**
+     * 单词拆分:给定一个非空字符串 s 和一个包含非空单词的列表 wordDict，
+     * 判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。
+     * 拆分时可以重复使用字典中的单词。
+     * 你可以假设字典中没有重复的单词。
+     * @param s
+     * @param wordDict
+     * @return
+     */
+    public boolean wordBreak(String s, List<String> wordDict) {
+        boolean[] dp = new boolean[s.length()+1];
+        dp[0] = true;
+        HashSet<String> set = new HashSet<>(wordDict);
+        for (int i = 1; i <=s.length(); i++) {
+            for (int j = 0; j <i ; j++) {
+                String sub = s.substring(j,i);
+                if(dp[j]&&set.contains(sub)){
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[s.length()];
+
+    }
+
+
+
 
     /**
      * 打家劫舍:你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，
@@ -116,6 +150,26 @@ public class DpSolution {
 
         }
         return count[amount];
+    }
+
+
+    /**
+     * 比特位计数:给定一个非负整数 num。对于 0 ≤ i ≤ num 范围中的每个数字 i ，
+     * 计算其二进制数中的 1 的数目并将它们作为数组返回。
+     * @param num
+     * @return
+     */
+    public int[] countBits(int num) {
+        int[] res = new int[num+1];
+        int b = 1;
+        while (b<=num){
+            for (int i = 0; i <b && i+b<=num; i++) {
+                res[i+b] = res[i]+1;
+            }
+            b = b<<1;
+        }
+
+        return res;
     }
 
 }
