@@ -39,7 +39,8 @@ public class ArraySolution {
      */
     public double findMedianSortedArrays(int[] A, int[] B) {
 
-        // TODO: 2020-09-24  
+        // TODO: 2020-09-24
+        return 0;
 
     }
 
