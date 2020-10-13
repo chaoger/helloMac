@@ -172,4 +172,72 @@ public class DpSolution {
         return res;
     }
 
+
+
+
+
+
+    /**
+     * 最大正方形：在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
+     * @param matrix
+     * @return
+     */
+    public int maximalSquare(char[][] matrix) {
+        //dp(i,j) 表示以 (i, j) 为右下角，且只包含 1 的正方形的边长最大值
+        int m = matrix.length;
+        if(m==0) return 0;
+        int n = matrix[0].length;
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(matrix[i][j]=='1'){
+                    if(j==0||i==0){
+                        dp[i][j] = 1;
+                    }else {
+                        dp[i][j] = Math.min(dp[i-1][j-1],Math.min(dp[i][j-1],dp[i-1][j]))+1;
+                    }
+                }
+            }
+        }
+
+        int res = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                res = Math.max(dp[i][j],res);
+            }
+        }
+        return res*res;
+    }
+
+
+
+    /**
+     * 最长上升子序列：给定一个无序的整数数组，找到其中最长上升子序列的长度。
+     * @param nums
+     * @return
+     */
+    public int lengthOfLIS(int[] nums) {
+        //dp[i] 以下标为i的元素结尾的最长上升子序列
+        int n = nums.length;
+        if(n<=1) return n;
+        int[] dp = new int[n];
+        for (int i = 0; i <n ; i++) {
+            int max = 0;
+            for (int j = 0; j < i; j++) {
+                if(nums[i]>nums[j]){
+                    max = Math.max(max,dp[j]);
+                }
+            }
+            dp[i] = max+1;
+        }
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            res = Math.max(res,dp[i]);
+
+        }
+        return res;
+
+
+    }
+
 }
