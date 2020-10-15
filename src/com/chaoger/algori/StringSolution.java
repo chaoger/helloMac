@@ -61,6 +61,52 @@ public class StringSolution {
 
 
 
+    //正则表达式匹配
+
+
+
+
+    /**
+     * 电话号码的字母组合
+     * @param digits
+     * @return
+     */
+
+
+    public List<String> letterCombinations(String digits) {
+        List<String> output = new ArrayList<>();
+        if(digits.length()==0) return output;
+
+        Map<String, String> phone = new HashMap<String, String>() {{
+            put("2", "abc");
+            put("3", "def");
+            put("4", "ghi");
+            put("5", "jkl");
+            put("6", "mno");
+            put("7", "pqrs");
+            put("8", "tuv");
+            put("9", "wxyz");
+        }};
+
+        backTraceLetterCombinations(phone, output, new StringBuilder(), digits);
+
+        return output;
+    }
+
+    private void backTraceLetterCombinations(Map<String, String> phone,List<String> output,StringBuilder res,String digits){
+
+        if(digits.length()==0){
+            output.add(res.toString());
+            return;
+        }
+        String letters = phone.get(digits.substring(0, 1));
+        for (int i = 0; i < letters.length(); i++) {
+            res.append(letters.charAt(i));
+            backTraceLetterCombinations(phone,output,res,digits.substring(1));
+            res.deleteCharAt(res.length()-1);
+        }
+    }
+
 
     /**
      * 有效的括号:给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
@@ -143,4 +189,34 @@ public class StringSolution {
             cur.deleteCharAt(cur.length()-1);
         }
     }
+
+
+    /**
+     * 字母异位词分组:给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
+     * @param strs
+     * @return
+     */
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String,List<String>> map = new HashMap<>();
+        int[] count = new int[26];
+        for (int i = 0; i < strs.length; i++) {
+            Arrays.fill(count,0);
+            for (char c:strs[i].toCharArray()) {
+                count[c-'a']++;
+            }
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < 26; j++) {
+                sb.append(count[j]+"#");
+            }
+            String key = sb.toString();
+            if(!map.containsKey(key)){
+                map.put(key,new ArrayList<>());
+            }
+            map.get(key).add(strs[i]);
+
+        }
+        return new ArrayList<>(map.values());
+
+    }
+
 }
