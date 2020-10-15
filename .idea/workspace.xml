@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helloMac/com/chaoger/algori/DpSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/helloMac/com/chaoger/algori/DpSolution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4420">
-              <caret line="588" column="7" selection-start-line="588" selection-start-column="7" selection-end-line="588" selection-end-column="7" />
+            <state relative-caret-position="182">
+              <caret line="586" column="11" selection-start-line="586" selection-start-column="7" selection-end-line="586" selection-end-column="11" />
               <folding>
                 <element signature="method#twoSum#0;class#ArraySolution#0" />
                 <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -61,11 +60,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
+            <state relative-caret-position="415">
               <caret line="129" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="method#lengthOfLongestSubstring#0;class#StringSolution#0" />
                 <element signature="method#longestPalindrome#0;class#StringSolution#0" />
+                <element signature="method#expandAroundCenter#0;class#StringSolution#0" />
                 <element signature="method#isValid#0;class#StringSolution#0" />
                 <element signature="method#generateParenthesis#0;class#StringSolution#0" />
                 <element signature="method#backTraceGenerateParenthesis#0;class#StringSolution#0" />
@@ -74,28 +74,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10880">
-              <caret line="544" column="59" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="208" column="19" lean-forward="true" selection-start-line="185" selection-start-column="8" selection-end-line="208" selection-end-column="19" />
+            <state relative-caret-position="333">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#climbStairs#0;class#DpSolution#0" />
                 <element signature="method#wordBreak#0;class#DpSolution#0" />
                 <element signature="method#rob#0;class#DpSolution#0" />
+                <element signature="method#maximalSquare#0;class#DpSolution#0" />
+                <element signature="method#numSquares#0;class#DpSolution#0" />
+                <element signature="method#lengthOfLIS#0;class#DpSolution#0" />
+                <element signature="method#maxProfit#0;class#DpSolution#0" />
                 <element signature="method#maxCoins#0;class#DpSolution#0" />
                 <element signature="method#coinChange#0;class#DpSolution#0" />
                 <element signature="method#countBits#0;class#DpSolution#0" />
+                <element signature="method#canPartition#0;class#DpSolution#0" />
               </folding>
             </state>
           </provider>
@@ -131,11 +127,17 @@
       <find>public static void main</find>
       <find>findUnsortedSubarray</find>
       <find>todo</find>
-      <find>TODO</find>
       <find>子序列</find>
       <find>子序</find>
       <find>最长上升子序列</find>
+      <find>距离</find>
+      <find>不同的</find>
+      <find>完全</find>
+      <find>最佳</find>
+      <find>回文</find>
+      <find>目标和</find>
       <find>最大矩形</find>
+      <find>TODO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,22 +183,6 @@
               <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
               <item name="helloMac" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="helloMac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="helloMac" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algori" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -208,7 +194,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602597597913" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602752825664" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -386,12 +372,12 @@
       <workItem from="1601302368185" duration="2461000" />
       <workItem from="1601368074562" duration="2615000" />
       <workItem from="1601393808460" duration="2539000" />
-      <workItem from="1602492629152" duration="1836000" />
+      <workItem from="1602492629152" duration="14327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13894000" />
+    <option name="totallyTimeSpent" value="26385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,7 +392,7 @@
     <frame x="0" y="23" width="1440" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.055793993" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12517883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -423,8 +409,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32656023" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34107402" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.26560232" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.28882438" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32365748" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -510,10 +496,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11100">
+          <caret line="558" column="59" selection-start-line="558" selection-start-column="59" selection-end-line="558" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="588" column="7" selection-start-line="588" selection-start-column="7" selection-end-line="588" selection-end-column="7" />
+        <state relative-caret-position="182">
+          <caret line="586" column="11" selection-start-line="586" selection-start-column="7" selection-end-line="586" selection-end-column="11" />
           <folding>
             <element signature="method#twoSum#0;class#ArraySolution#0" />
             <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -553,11 +546,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
+        <state relative-caret-position="415">
           <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="method#lengthOfLongestSubstring#0;class#StringSolution#0" />
             <element signature="method#longestPalindrome#0;class#StringSolution#0" />
+            <element signature="method#expandAroundCenter#0;class#StringSolution#0" />
             <element signature="method#isValid#0;class#StringSolution#0" />
             <element signature="method#generateParenthesis#0;class#StringSolution#0" />
             <element signature="method#backTraceGenerateParenthesis#0;class#StringSolution#0" />
@@ -565,25 +559,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10880">
-          <caret line="544" column="59" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="208" column="19" lean-forward="true" selection-start-line="185" selection-start-column="8" selection-end-line="208" selection-end-column="19" />
+        <state relative-caret-position="333">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#climbStairs#0;class#DpSolution#0" />
             <element signature="method#wordBreak#0;class#DpSolution#0" />
             <element signature="method#rob#0;class#DpSolution#0" />
+            <element signature="method#maximalSquare#0;class#DpSolution#0" />
+            <element signature="method#numSquares#0;class#DpSolution#0" />
+            <element signature="method#lengthOfLIS#0;class#DpSolution#0" />
+            <element signature="method#maxProfit#0;class#DpSolution#0" />
             <element signature="method#maxCoins#0;class#DpSolution#0" />
             <element signature="method#coinChange#0;class#DpSolution#0" />
             <element signature="method#countBits#0;class#DpSolution#0" />
+            <element signature="method#canPartition#0;class#DpSolution#0" />
           </folding>
         </state>
       </provider>

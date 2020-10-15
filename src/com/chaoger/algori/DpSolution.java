@@ -35,6 +35,33 @@ public class DpSolution {
     }
 
 
+
+
+    /**
+     * 编辑距离
+     */
+
+
+
+    /**
+     * 不同的二叉搜索树
+     */
+    public int numTrees(int n) {
+        int dp[] = new int[n+1];
+        dp[0] =1;
+        dp[1] = 1;
+        for (int i = 2; i <=n; i++) {
+            for (int j = 1; j <=i; j++) {
+                dp[i] +=dp[j-1]*dp[i-j];
+            }
+
+        }
+        return dp[n];
+    }
+
+
+
+
     /**
      * 单词拆分:给定一个非空字符串 s 和一个包含非空单词的列表 wordDict，
      * 判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。
@@ -62,8 +89,6 @@ public class DpSolution {
     }
 
 
-
-
     /**
      * 打家劫舍:你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，
      * 影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
@@ -87,6 +112,114 @@ public class DpSolution {
         return Math.max(preMax,pre);
 
     }
+
+
+    /**
+     * 最大正方形：在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
+     * @param matrix
+     * @return
+     */
+    public int maximalSquare(char[][] matrix) {
+        //dp(i,j) 表示以 (i, j) 为右下角，且只包含 1 的正方形的边长最大值
+        int m = matrix.length;
+        if(m==0) return 0;
+        int n = matrix[0].length;
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(matrix[i][j]=='1'){
+                    if(j==0||i==0){
+                        dp[i][j] = 1;
+                    }else {
+                        dp[i][j] = Math.min(dp[i-1][j-1],Math.min(dp[i][j-1],dp[i-1][j]))+1;
+                    }
+                }
+            }
+        }
+
+        int res = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                res = Math.max(dp[i][j],res);
+            }
+        }
+        return res*res;
+    }
+
+
+    /**
+     * 完全平方数
+     */
+    public int numSquares(int n) {
+        //dp 组成n的最小平方数个数
+        int[] dp = new int[n+1];
+        Arrays.fill(dp,Integer.MAX_VALUE);
+        dp[0] = 0;
+        int sqrt = (int) Math.sqrt(n);
+        for (int i = 1; i <= n; i++) {
+            int min = Integer.MAX_VALUE;
+            for (int j = 0; j <=sqrt&&j*j<=i; j++) {
+                min = Math.min(dp[i-j*j],min);
+            }
+            dp[i] = min+1;
+        }
+        return dp[n];
+    }
+
+
+    /**
+     * 最长上升子序列：给定一个无序的整数数组，找到其中最长上升子序列的长度。
+     * @param nums
+     * @return
+     */
+    public int lengthOfLIS(int[] nums) {
+        //dp[i] 以下标为i的元素结尾的最长上升子序列
+        int n = nums.length;
+        if(n<=1) return n;
+        int[] dp = new int[n];
+        for (int i = 0; i <n ; i++) {
+            int max = 0;
+            for (int j = 0; j < i; j++) {
+                if(nums[i]>nums[j]){
+                    max = Math.max(max,dp[j]);
+                }
+            }
+            dp[i] = max+1;
+        }
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            res = Math.max(res,dp[i]);
+
+        }
+        return res;
+
+
+    }
+
+
+    /**
+     * 最佳买卖股票时机含冷冻期
+     */
+    public int maxProfit(int[] prices) {
+        //f0目前持有一支股票，对应的「累计最大收益」
+        //f1目前不持有任何股票，并且处于冷冻期中，对应的「累计最大收益」
+        //f2目前不持有任何股票，并且不处于冷冻期中，对应的「累计最大收益」
+        int n = prices.length;
+        if(n<=1) return 0;
+        int f0 = -prices[0];
+        int f1 = 0;
+        int f2 = 0;
+        for (int i =1; i <n ; i++) {
+            int newf0 = Math.max(f0,f2-prices[i]);
+            int newf1 = f0+prices[i];
+            int newf2 = Math.max(f1,f2);
+            f0 = newf0;
+            f1 = newf1;
+            f2 = newf2;
+        }
+        return Math.max(f1,f2);
+    }
+
 
 
     /**
@@ -173,71 +306,37 @@ public class DpSolution {
     }
 
 
-
-
-
-
     /**
-     * 最大正方形：在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
-     * @param matrix
-     * @return
+     * 分割等和子集：给定一个只包含正整数的非空数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
      */
-    public int maximalSquare(char[][] matrix) {
-        //dp(i,j) 表示以 (i, j) 为右下角，且只包含 1 的正方形的边长最大值
-        int m = matrix.length;
-        if(m==0) return 0;
-        int n = matrix[0].length;
-        int[][] dp = new int[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if(matrix[i][j]=='1'){
-                    if(j==0||i==0){
-                        dp[i][j] = 1;
-                    }else {
-                        dp[i][j] = Math.min(dp[i-1][j-1],Math.min(dp[i][j-1],dp[i-1][j]))+1;
-                    }
-                }
-            }
-        }
-
-        int res = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                res = Math.max(dp[i][j],res);
-            }
-        }
-        return res*res;
-    }
-
-
-
-    /**
-     * 最长上升子序列：给定一个无序的整数数组，找到其中最长上升子序列的长度。
-     * @param nums
-     * @return
-     */
-    public int lengthOfLIS(int[] nums) {
-        //dp[i] 以下标为i的元素结尾的最长上升子序列
+    public boolean canPartition(int[] nums) {
         int n = nums.length;
-        if(n<=1) return n;
-        int[] dp = new int[n];
-        for (int i = 0; i <n ; i++) {
-            int max = 0;
-            for (int j = 0; j < i; j++) {
-                if(nums[i]>nums[j]){
-                    max = Math.max(max,dp[j]);
-                }
-            }
-            dp[i] = max+1;
+        if(n<2) return false;
+        int sum = 0, maxNum = 0;
+        for (int num : nums) {
+            sum += num;
+            maxNum = Math.max(maxNum, num);
         }
-        int res = 0;
+        if (sum % 2 != 0) {
+            return false;
+        }
+        int target = sum / 2;
+        if (maxNum > target) {
+            return false;
+        }
+        boolean[] dp = new boolean[target + 1];
+        dp[0] = true;
         for (int i = 0; i < n; i++) {
-            res = Math.max(res,dp[i]);
-
+            int num = nums[i];
+            for (int j = target; j >= num; --j) {
+                dp[j] |= dp[j - num];
+            }
         }
-        return res;
-
-
+        return dp[target];
     }
+
+    /**
+     * 目标和
+     */
 
 }
