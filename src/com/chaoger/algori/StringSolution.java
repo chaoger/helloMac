@@ -27,6 +27,8 @@ public class StringSolution {
 
     }
 
+
+
     /**
      * 最长回文子串:给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
      * @param s
@@ -60,9 +62,41 @@ public class StringSolution {
 
 
 
+    /**
+     * 正则表达式匹配:给你一个字符串 s 和一个字符规律 p，
+     * 请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
+     * @param s
+     * @param p
+     * @return
+     */
+    public boolean isMatch(String s, String p) {
+        int m = s.length();
+        int n = p.length();
+        boolean[][] dp = new boolean[m+1][n+1];
+        dp[0][0] = true;
+        for (int i = 1; i < n; i++) {
+            if(p.charAt(i)=='*'&&dp[0][i-1]){
+                dp[0][i+1] = true;
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(p.charAt(j)=='.'||s.charAt(i)==p.charAt(j)){
+                    dp[i+1][j+1] = dp[i][j];
+                }
 
-    //正则表达式匹配
-
+                if(j>0&&p.charAt(j)=='*'){
+                    if(p.charAt(j-1)!=s.charAt(i)&&p.charAt(j-1)!='.'){
+                        dp[i+1][j+1] = dp[i+1][j-1];
+                    }else {
+                        //分别 匹配0个、1个或者多个
+                        dp[i+1][j+1] = dp[i+1][j-1] ||dp[i+1][j] || dp[i][j+1];
+                    }
+                }
+            }
+        }
+        return dp[m][n];
+    }
 
 
 
@@ -71,8 +105,6 @@ public class StringSolution {
      * @param digits
      * @return
      */
-
-
     public List<String> letterCombinations(String digits) {
         List<String> output = new ArrayList<>();
         if(digits.length()==0) return output;
@@ -106,6 +138,7 @@ public class StringSolution {
             res.deleteCharAt(res.length()-1);
         }
     }
+
 
 
     /**
@@ -160,6 +193,7 @@ public class StringSolution {
     }
 
 
+
     /**
      * 括号生成:数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
      * @param n
@@ -191,7 +225,35 @@ public class StringSolution {
     }
 
 
-    //最长有效括号
+
+    /**
+     * 最长有效括号:给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
+     * @param s
+     * @return
+     */
+    public int longestValidParentheses(String s) {
+        int n = s.length();
+        if(n<2) return 0;
+        int[] dp = new int[n];
+        int max = 0;
+        for (int i = 1; i < n; i++) {
+            char c0 = s.charAt(i);
+            char c1 = s.charAt(i-1);
+            if(c0==')'){
+                if(c1=='('){
+                    dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
+                }else if(i-dp[i-1]>0&&s.charAt(i-dp[i-1]-1) =='('){
+                    dp[i] =dp[i-1]+((i-dp[i-1]>=2)?dp[i-dp[i-1]-2]:0)+2;
+                }
+            }
+            max = Math.max(max,dp[i]);
+
+        }
+        return max;
+
+    }
+
+
 
     /**
      * 字母异位词分组:给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
@@ -222,7 +284,6 @@ public class StringSolution {
     }
 
 
-    //
 
     /**
      * 最小覆盖子串:给你一个字符串 S、一个字符串 T 。
@@ -272,6 +333,7 @@ public class StringSolution {
     }
 
 
+
     /**
      * 回文子串:给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
      * 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。
@@ -293,6 +355,7 @@ public class StringSolution {
         return ans;
 
     }
+
 
 
 }
