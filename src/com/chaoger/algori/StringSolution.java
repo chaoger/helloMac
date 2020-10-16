@@ -191,6 +191,8 @@ public class StringSolution {
     }
 
 
+    //最长有效括号
+
     /**
      * 字母异位词分组:给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
      * @param strs
@@ -218,5 +220,79 @@ public class StringSolution {
         return new ArrayList<>(map.values());
 
     }
+
+
+    //
+
+    /**
+     * 最小覆盖子串:给你一个字符串 S、一个字符串 T 。
+     * 请你设计一种算法，可以在 O(n) 的时间复杂度内，从字符串 S 里面找出：包含 T 所有字符的最小子串。
+     * @param s
+     * @param t
+     * @return
+     */
+    public String minWindow(String s, String t) {
+        if(s.length()==0||t.length()==0) return "";
+        Map<Character,Integer> dictT = new HashMap<>();
+        for (int i = 0; i < t.length(); i++) {
+            int count = dictT.getOrDefault(t.charAt(i), 0)+1;
+            dictT.put(t.charAt(i),count);
+        }
+        int[] ans = new int[]{-1,0,0};
+        int r = 0,l =0,formed=0;
+        int required = dictT.size();
+        Map<Character,Integer> window = new HashMap<>();
+        while (r<s.length()){
+            char c = s.charAt(r);
+            int count = window.getOrDefault(c, 0)+1;
+            window.put(c,count);
+            if(dictT.containsKey(c)&&dictT.get(c)==count){
+                formed++;
+            }
+            while (l<=r&&formed==required){
+                if(ans[0]==-1||r-l+1<ans[0]){
+                    ans[0] = r-l+1;
+                    ans[1] = l;
+                    ans[2] = r;
+                }
+                char c1 = s.charAt(l);
+                int count1 = window.get(c1)-1;
+                window.put(c1,count1);
+                if(dictT.containsKey(c1)&&dictT.get(c1)>count1){
+                    formed--;
+                }
+
+                l++;
+            }
+            r++;
+        }
+
+
+        return ans[0]==-1?"":s.substring(ans[1],ans[2]+1);
+    }
+
+
+    /**
+     * 回文子串:给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
+     * 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。
+     * @param s
+     * @return
+     */
+    public int countSubstrings(String s) {
+        int length = s.length();
+        int ans = 0;
+        for (int i = 0; i < length*2; i++) {
+            int left = i/2;
+            int right = (i+1)/2;
+            while (left>=0&&right<length&&s.charAt(left)==s.charAt(right)){
+                ans++;
+                left--;
+                right++;
+            }
+        }
+        return ans;
+
+    }
+
 
 }
