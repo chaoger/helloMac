@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,10 +117,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="66" column="20" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="66" selection-end-column="20" />
+            <state relative-caret-position="221">
+              <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#levelOrder#0;class#BFSSolution#0" />
+                <element signature="method#isSymmetric#0;class#BFSSolution#0" />
+                <element signature="method#numIslands#0;class#BFSSolution#0" />
               </folding>
             </state>
           </provider>
@@ -429,12 +430,12 @@
       <workItem from="1601393808460" duration="2539000" />
       <workItem from="1602492629152" duration="21035000" />
       <workItem from="1602822638348" duration="3486000" />
-      <workItem from="1602857975501" duration="987000" />
+      <workItem from="1602857975501" duration="3196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37566000" />
+    <option name="totallyTimeSpent" value="39775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +450,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.094420604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.094420604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,7 +467,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32656023" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.26987952" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.26987952" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.28882438" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32365748" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -645,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -659,12 +653,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="66" column="20" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="66" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#levelOrder#0;class#BFSSolution#0" />
+            <element signature="method#isSymmetric#0;class#BFSSolution#0" />
+            <element signature="method#numIslands#0;class#BFSSolution#0" />
           </folding>
         </state>
       </provider>
