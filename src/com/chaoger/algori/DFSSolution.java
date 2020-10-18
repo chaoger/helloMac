@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * dfs 7题
+ */
 public class DFSSolution {
 
     public class TreeNode {
@@ -14,10 +17,9 @@ public class DFSSolution {
         TreeNode(int x) { val = x; }
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(decodeString("3[a]2[bc]"));
-    }
+    /**
+     * 验证二叉搜索树
+     */
 
     /**
      * 二叉树的最大深度:给定一个二叉树，找出其最大深度。
@@ -32,6 +34,17 @@ public class DFSSolution {
             return Math.max(maxDepth(root.left),maxDepth(root.right))+1;
         }
     }
+
+
+    /**
+     * 从前序与中序遍历序列构造二叉树
+     */
+
+
+    /**
+     * 二叉树中的最大路径和
+     */
+
 
 
     /**
@@ -62,6 +75,8 @@ public class DFSSolution {
         return new int[]{robValue,skipValue};
 
     }
+
+
 
     /**
      * 二叉树展开为链表:给定一个二叉树，原地将它展开为一个单链表。

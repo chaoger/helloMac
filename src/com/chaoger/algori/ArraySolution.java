@@ -2,12 +2,10 @@ package com.chaoger.algori;
 
 import java.util.*;
 
+/**
+ * 数组 31题
+ */
 public class ArraySolution {
-
-
-
-
-    //
 
     /**
      * 两数之和:给定一个整数数组 nums 和一个目标值 target，
@@ -44,6 +42,8 @@ public class ArraySolution {
 
     }
 
+
+
     /**
      * 盛最多水的容器:给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。
      * 在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，
@@ -68,6 +68,8 @@ public class ArraySolution {
         return max;
 
     }
+
+
 
     /**
      * 三数之和:给你一个包含 n 个整数的数组 nums，
@@ -114,10 +116,13 @@ public class ArraySolution {
 
     }
 
+
+
     /**
      * 下一个排列:实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
      *
      * @param nums
+     * @return
      */
     public void nextPermutation(int[] nums) {
         //1.第一个降序的index
@@ -152,6 +157,8 @@ public class ArraySolution {
         nums[i] = nums[j];
         nums[j] = tmp;
     }
+
+
 
     /**
      * 搜索旋转排序数组:假设按照升序排序的数组在预先未知的某个点上进行了旋转。
@@ -192,6 +199,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 在排序数组中查找元素的第一个和最后一个位置:
      * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
@@ -225,6 +233,8 @@ public class ArraySolution {
         res[1] = last - 1;
         return res;
     }
+
+
 
     /**
      * 组合总和:给定一个无重复元素的数组 candidates 和一个目标数 target ，
@@ -260,6 +270,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 接雨水：给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
      * @param height
@@ -293,13 +304,14 @@ public class ArraySolution {
         return res;
     }
 
+
+
     /**
      * 旋转图像:给定一个 n × n 的二维矩阵表示一个图像。
      *
      * 将图像顺时针旋转 90 度。
      * @param matrix
      */
-
     public void rotate(int[][] matrix){
 
         //1.主对角线互换
@@ -325,6 +337,8 @@ public class ArraySolution {
     }
 
 
+
+
     /**
      * 最大子序和:给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
      * @param nums
@@ -345,6 +359,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 跳跃游戏:给定一个非负整数数组，你最初位于数组的第一个位置。
      * 数组中的每个元素代表你在该位置可以跳跃的最大长度。
@@ -361,6 +376,7 @@ public class ArraySolution {
         return max>=nums.length-1;
 
     }
+
 
 
     /**
@@ -391,6 +407,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 不同路径:一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
      *
@@ -413,6 +430,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 最小路径和:
      * 给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
@@ -420,7 +438,6 @@ public class ArraySolution {
      * 说明：每次只能向下或者向右移动一步。
      * @param grid
      */
-
     public int minPathSum(int[][] grid) {
 
         for (int i = 0; i < grid.length; i++) {
@@ -441,6 +458,8 @@ public class ArraySolution {
         return grid[grid.length-1][grid[0].length-1];
 
     }
+
+
 
     /**
      * 颜色分类:给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。
@@ -466,6 +485,8 @@ public class ArraySolution {
         }
 
     }
+
+
 
     /**
      * 子集:给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
@@ -496,6 +517,8 @@ public class ArraySolution {
 
     }
 
+
+
     /**
      * 单词搜索:给定一个二维网格和一个单词，找出该单词是否存在于网格中。
      *
@@ -504,7 +527,6 @@ public class ArraySolution {
      * @param word
      * @return
      */
-
     int[][] existDirection = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
     boolean[][] existMark ;
 
@@ -557,8 +579,6 @@ public class ArraySolution {
 
 
 
-
-
     /**
      * 柱状图中最大的矩形:给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
      * 求在该柱状图中，能够勾勒出来的矩形的最大面积。
@@ -608,6 +628,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 乘积最大子数组:给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组
      * （该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
@@ -628,6 +649,8 @@ public class ArraySolution {
 
     }
 
+
+
     /**
      *  多数元素:给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
      * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
@@ -646,6 +669,7 @@ public class ArraySolution {
 
         return res;
     }
+
 
 
     /**
@@ -671,7 +695,6 @@ public class ArraySolution {
 
 
 
-
     /**
      * 移动零：给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
      * @param nums
@@ -688,6 +711,7 @@ public class ArraySolution {
         }
 
     }
+
 
 
     /**
@@ -711,6 +735,8 @@ public class ArraySolution {
 
         return slow;
     }
+
+
 
     /**
      * 找到所有数组中消失的数字:给定一个范围在  1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
@@ -772,6 +798,7 @@ public class ArraySolution {
     }
 
 
+
     /**
      * 最短无序连续子数组:给定一个整数数组，你需要寻找一个连续的子数组，
      * 如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
@@ -807,6 +834,7 @@ public class ArraySolution {
         return r - l < 0 ? 0 : r - l + 1;
 
     }
+
 
 
     /**

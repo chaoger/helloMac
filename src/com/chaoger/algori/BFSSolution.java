@@ -2,6 +2,9 @@ package com.chaoger.algori;
 
 import java.util.*;
 
+/**
+ * bfs 5题
+ */
 public class BFSSolution {
 
 
@@ -172,5 +175,9 @@ public class BFSSolution {
         }
         return visited == numCourses;
     }
+
+    /**
+     * 删除无效括号
+     */
 
 }

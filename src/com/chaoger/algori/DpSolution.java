@@ -3,15 +3,10 @@ package com.chaoger.algori;
 import java.util.Arrays;
 import java.util.*;
 
+/**
+ * 动态规划 14题
+ */
 public class DpSolution {
-
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{3,1,5,8};
-        maxCoins(arr);
-    }
-
-
 
     /**
      * 爬楼梯:假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
@@ -36,7 +31,6 @@ public class DpSolution {
 
 
 
-
     /**
      * 编辑距离
      */
@@ -58,7 +52,6 @@ public class DpSolution {
         }
         return dp[n];
     }
-
 
 
 
@@ -89,6 +82,7 @@ public class DpSolution {
     }
 
 
+
     /**
      * 打家劫舍:你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，
      * 影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
@@ -112,6 +106,7 @@ public class DpSolution {
         return Math.max(preMax,pre);
 
     }
+
 
 
     /**
@@ -147,6 +142,7 @@ public class DpSolution {
     }
 
 
+
     /**
      * 完全平方数
      */
@@ -165,6 +161,7 @@ public class DpSolution {
         }
         return dp[n];
     }
+
 
 
     /**
@@ -195,6 +192,7 @@ public class DpSolution {
 
 
     }
+
 
 
     /**
@@ -256,7 +254,6 @@ public class DpSolution {
 
 
 
-
     /**
      * 零钱兑换:给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。
      *
@@ -286,6 +283,7 @@ public class DpSolution {
     }
 
 
+
     /**
      * 比特位计数:给定一个非负整数 num。对于 0 ≤ i ≤ num 范围中的每个数字 i ，
      * 计算其二进制数中的 1 的数目并将它们作为数组返回。
@@ -304,6 +302,7 @@ public class DpSolution {
 
         return res;
     }
+
 
 
     /**
@@ -334,6 +333,8 @@ public class DpSolution {
         }
         return dp[target];
     }
+
+
 
     /**
      * 目标和
