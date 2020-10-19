@@ -69,6 +69,43 @@ public class DoublePointSolution {
 
 
 
-    //回文链表
+
+
+    /**
+     * 回文链表:请判断一个链表是否为回文链表。
+     * @param head
+     * @return
+     */
+    public  boolean isPalindrome(ListNode head) {
+        ListNode dummy = new ListNode(-1);
+        dummy.next  = head;
+        ListNode slow = dummy;
+        ListNode first = dummy;
+        while (first!=null&&first.next!=null){
+            slow = slow.next;
+            first = first.next.next;
+        }
+        ListNode head2 = reverse(slow.next);
+        slow.next = null;
+        while (head!=null&&head2!=null){
+            if(head.val!=head2.val){
+                return false;
+            }
+            head = head.next;
+            head2 = head2.next;
+        }
+        return true;
+    }
+
+    private ListNode reverse(ListNode head){
+        ListNode pre = null;
+        while (head!=null){
+            ListNode next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
 
 }
