@@ -5,8 +5,34 @@ import java.util.*;
 public class HashSolution {
 
 
-    //二叉树的中序遍历
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
 
+
+    /**
+     * 二叉树的中序遍历
+     * @param root
+     * @return
+     */
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+
+        return res;
+
+    }
+
+    private void inorder(TreeNode root,List<Integer> res){
+        if(root==null){
+            return;
+        }
+        inorder(root.left,res);
+        res.add(root.val);
+        inorder(root.right,res);
+    }
 
     /**
      * 只出现一次的数字:给定一个非空整数数组，除了某个元素只出现一次以外，
