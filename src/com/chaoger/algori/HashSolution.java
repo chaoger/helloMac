@@ -53,7 +53,6 @@ public class HashSolution {
 
 
 
-    //前 K 个高频元素
 
     /**
      * 前 K 个高频元素:给定一个非空的整数数组，返回其中出现频率前 k 高的元素。
@@ -93,7 +92,49 @@ public class HashSolution {
     }
 
 
-    //找到字符串中所有字母异位词
+
+    /**
+     * 给定一个字符串 s 和一个非空字符串 p，找到 s 中所有是 p 的字母异位词的子串，返回这些子串的起始索引。
+     * 字符串只包含小写英文字母，并且字符串 s 和 p 的长度都不超过 20100。
+     *
+     * 说明：
+     * 字母异位词指字母相同，但排列相同或不同的字符串。
+     * 不考虑答案输出的顺序。
+     * @param s
+     * @param p
+     * @return
+     */
+    public List<Integer> findAnagrams(String s, String p) {
+        char[] arrS = s.toCharArray();
+        char[] arrP = p.toCharArray();
+        List<Integer> ans = new ArrayList<>();
+
+        int[] needs = new int[26];
+        int[] window = new int[26];
+
+        int left = 0;
+        int right = 0;
+
+        for (char c : arrP) {
+            needs[c-'a']++;
+        }
+        while (right<arrS.length){
+            int curR = arrS[right]-'a';
+            right++;
+            window[curR]++;
+            while (window[curR]>needs[curR]){
+                int curL = arrS[left]-'a';
+                window[curL]--;
+                left++;
+            }
+            if(right-left==arrP.length){
+                ans.add(left);
+            }
+        }
+
+        return ans;
+
+    }
 
 
 
