@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,12 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="439">
+              <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
               <folding>
+                <element signature="method#minMeetingRooms#0;class#GreedySolution#0" />
+                <element signature="method#reconstructQueue#0;class#GreedySolution#0" />
                 <element signature="e#789#790#0" expanded="true" />
                 <element signature="e#864#865#0" expanded="true" />
               </folding>
@@ -52,11 +52,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="332">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,6 +76,15 @@
                 <element signature="method#flatten#0;class#DFSSolution#0" />
                 <element signature="method#decodeString#0;class#DFSSolution#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -95,23 +107,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1771">
+            <state relative-caret-position="980">
               <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
               <folding>
+                <element signature="method#inorderTraversal#0;class#HashSolution#0" />
+                <element signature="method#inorder#0;class#HashSolution#0" />
+                <element signature="method#singleNumber#0;class#HashSolution#0" />
+                <element signature="method#topKFrequent#0;class#HashSolution#0" />
                 <element signature="e#1428#1429#0" expanded="true" />
                 <element signature="e#1478#1479#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#findAnagrams#0;class#HashSolution#0" />
+                <element signature="method#dailyTemperatures#0;class#HashSolution#0" />
               </folding>
             </state>
           </provider>
@@ -156,7 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>最佳</find>
       <find>回文</find>
       <find>目标和</find>
       <find>最大矩形</find>
@@ -186,6 +191,7 @@
       <find>找到字符串中所有字母异位词</find>
       <find>前 K 个高频元素</find>
       <find>字母异位词</find>
+      <find>ListNode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,12 +218,12 @@
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" />
-        <option value="$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java" />
       </list>
     </option>
   </component>
@@ -260,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603356181746" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603359650015" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -451,12 +457,12 @@
       <workItem from="1603097466963" duration="236000" />
       <workItem from="1603097774207" duration="5068000" />
       <workItem from="1603196642599" duration="769000" />
-      <workItem from="1603352157025" duration="3201000" />
+      <workItem from="1603352157025" duration="5051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60329000" />
+    <option name="totallyTimeSpent" value="62179000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1023">
@@ -724,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-279">
@@ -747,22 +739,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
+        <state relative-caret-position="980">
           <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
           <folding>
+            <element signature="method#inorderTraversal#0;class#HashSolution#0" />
+            <element signature="method#inorder#0;class#HashSolution#0" />
+            <element signature="method#singleNumber#0;class#HashSolution#0" />
+            <element signature="method#topKFrequent#0;class#HashSolution#0" />
             <element signature="e#1428#1429#0" expanded="true" />
             <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="method#findAnagrams#0;class#HashSolution#0" />
+            <element signature="method#dailyTemperatures#0;class#HashSolution#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="439">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
+            <element signature="method#minMeetingRooms#0;class#GreedySolution#0" />
+            <element signature="method#reconstructQueue#0;class#GreedySolution#0" />
             <element signature="e#789#790#0" expanded="true" />
             <element signature="e#864#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
