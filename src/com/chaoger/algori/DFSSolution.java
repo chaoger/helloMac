@@ -1,9 +1,6 @@
 package com.chaoger.algori;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * dfs 7题
@@ -19,7 +16,24 @@ public class DFSSolution {
 
     /**
      * 验证二叉搜索树
+     * @return
      */
+    public boolean isValidBST(TreeNode root) {
+
+        return compareTreeNode(root,null,null);
+    }
+
+    private boolean compareTreeNode(TreeNode root,Integer lower,Integer upper){
+        if(root==null) return true;
+        int val = root.val;
+        if(lower!=null&&val<=lower) return false;
+        if(upper!=null&&val>=upper) return false;
+        if(!compareTreeNode(root.left,lower,val)) return false;
+        if(!compareTreeNode(root.right,val,upper)) return false;
+        return true;
+
+    }
+
 
     /**
      * 二叉树的最大深度:给定一个二叉树，找出其最大深度。
@@ -38,11 +52,33 @@ public class DFSSolution {
 
     /**
      * 从前序与中序遍历序列构造二叉树
+     * @return
      */
+    Map<Integer,Integer> indexMap = new HashMap<>();
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        for (int i = 0; i < inorder.length; i++) {
+            indexMap.put(inorder[i],i);
+        }
+        return buildTreeHelper(preorder, inorder, 0, preorder.length-1, 0, inorder.length-1);
 
+    }
+
+    private TreeNode buildTreeHelper(int[] preorder, int[] inorder,int pre_begin,int per_end,int in_begin,int in_end){
+        if(pre_begin>per_end){
+            return null;
+        }
+        int root_val = preorder[pre_begin];
+        int in_root_index = indexMap.get(root_val);
+        int left_len = in_root_index-in_begin;
+        TreeNode root = new TreeNode(root_val);
+        root.left = buildTreeHelper(preorder,inorder,pre_begin+1,pre_begin+left_len,in_begin,in_root_index-1);
+        root.right = buildTreeHelper(preorder,inorder,pre_begin+left_len+1,per_end,in_root_index+1,in_end);
+        return root;
+    }
 
     /**
      * 二叉树中的最大路径和
+     * @return
      */
 
 
@@ -82,6 +118,7 @@ public class DFSSolution {
      * 二叉树展开为链表:给定一个二叉树，原地将它展开为一个单链表。
      *
      * @param root
+     * @return
      */
     public void flatten(TreeNode root) {
         //解决方案也可以采用先序遍历的方式、不过时间复杂度为O(n)

@@ -14,7 +14,11 @@ public class BackTraceSolution {
     boolean[] visited;
 
     /**
+     */
+    /**
      * 全排列:给定一个 没有重复 数字的序列，返回其所有可能的全排列。
+     * @param nums
+     * @return
      */
     public List<List<Integer>> permute(int[] nums) {
         visited = new boolean[nums.length];

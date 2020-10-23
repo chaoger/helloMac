@@ -3,7 +3,7 @@ package com.chaoger.algori;
 import java.util.*;
 
 /**
- * 数组 31题
+ * 数组 30题
  */
 public class ArraySolution {
 
@@ -311,6 +311,7 @@ public class ArraySolution {
      *
      * 将图像顺时针旋转 90 度。
      * @param matrix
+     * @return
      */
     public void rotate(int[][] matrix){
 
@@ -437,6 +438,7 @@ public class ArraySolution {
      *
      * 说明：每次只能向下或者向右移动一步。
      * @param grid
+     * @return
      */
     public int minPathSum(int[][] grid) {
 
@@ -467,6 +469,7 @@ public class ArraySolution {
      * 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
      *
      * @param nums
+     * @return
      */
     public void sortColors(int[] nums) {
         int p0=0,cur = 0,p2 = nums.length-1;
@@ -604,17 +607,20 @@ public class ArraySolution {
     }
 
 
-    // TODO: 2020-09-25
 
-    // 最大矩形
-
-    // 从前序与中序遍历构造二叉树
+    //
+    /**
+     * 最大矩形
+     * @param heights
+     * @return
+     */
 
 
     /**
      *买卖股票的最佳时机:给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
      * 如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。
      * @param prices
+     * @return
      */
     public int maxProfit(int[] prices) {
         int profit = 0;
@@ -698,6 +704,7 @@ public class ArraySolution {
     /**
      * 移动零：给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
      * @param nums
+     * @return
      */
     public void moveZeroes(int[] nums) {
         int index = 0;
@@ -862,9 +869,6 @@ public class ArraySolution {
 
 
 
-    public static void main(String[] args) {
 
-
-    }
 
 }

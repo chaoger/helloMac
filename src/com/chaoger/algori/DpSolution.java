@@ -33,12 +33,14 @@ public class DpSolution {
 
     /**
      * 编辑距离
+     * @return
      */
 
 
 
     /**
      * 不同的二叉搜索树
+     * @return
      */
     public int numTrees(int n) {
         int dp[] = new int[n+1];
@@ -145,6 +147,7 @@ public class DpSolution {
 
     /**
      * 完全平方数
+     * @return
      */
     public int numSquares(int n) {
         //dp 组成n的最小平方数个数
@@ -197,6 +200,7 @@ public class DpSolution {
 
     /**
      * 最佳买卖股票时机含冷冻期
+     * @return
      */
     public int maxProfit(int[] prices) {
         //f0目前持有一支股票，对应的「累计最大收益」
@@ -307,6 +311,7 @@ public class DpSolution {
 
     /**
      * 分割等和子集：给定一个只包含正整数的非空数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
+     * @return
      */
     public boolean canPartition(int[] nums) {
         int n = nums.length;
@@ -338,6 +343,7 @@ public class DpSolution {
 
     /**
      * 目标和
+     * @return
      */
 
 }
