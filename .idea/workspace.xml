@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="587da4b7-78f1-45d9-94d5-f98f17e1375f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="610" column="6" lean-forward="true" selection-start-line="610" selection-start-column="6" selection-end-line="610" selection-end-column="6" />
+            <state relative-caret-position="4860">
+              <caret line="610" column="6" selection-start-line="610" selection-start-column="6" selection-end-line="610" selection-end-column="6" />
               <folding>
                 <element signature="method#twoSum#0;class#ArraySolution#0" />
                 <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -60,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
+            <state relative-caret-position="840">
               <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
               <folding>
                 <element signature="method#minMeetingRooms#0;class#GreedySolution#0" />
@@ -73,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="343" column="14" lean-forward="true" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="14" />
+            <state relative-caret-position="2140">
+              <caret line="343" column="14" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="14" />
               <folding>
                 <element signature="method#lengthOfLongestSubstring#0;class#StringSolution#0" />
                 <element signature="method#longestPalindrome#0;class#StringSolution#0" />
@@ -97,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="1080">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#mergeKLists#0;class#DivideSolution#0" />
@@ -112,43 +113,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+            <state relative-caret-position="1020">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="method#isValidBST#0;class#DFSSolution#0" />
                 <element signature="method#compareTreeNode#0;class#DFSSolution#0" />
                 <element signature="method#maxDepth#0;class#DFSSolution#0" />
                 <element signature="method#buildTree#0;class#DFSSolution#0" />
                 <element signature="method#buildTreeHelper#0;class#DFSSolution#0" />
+                <element signature="method#maxPathSum#0;class#DFSSolution#0" />
+                <element signature="method#maxGain#0;class#DFSSolution#0" />
                 <element signature="method#rob#0;class#DFSSolution#0" />
                 <element signature="method#dfsRob#0;class#DFSSolution#0" />
                 <element signature="method#flatten#0;class#DFSSolution#0" />
                 <element signature="method#decodeString#0;class#DFSSolution#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#climbStairs#0;class#DpSolution#0" />
-                <element signature="method#numTrees#0;class#DpSolution#0" />
-                <element signature="method#wordBreak#0;class#DpSolution#0" />
-                <element signature="method#rob#0;class#DpSolution#0" />
-                <element signature="method#maximalSquare#0;class#DpSolution#0" />
-                <element signature="method#numSquares#0;class#DpSolution#0" />
-                <element signature="method#lengthOfLIS#0;class#DpSolution#0" />
-                <element signature="method#maxProfit#0;class#DpSolution#0" />
-                <element signature="method#maxCoins#0;class#DpSolution#0" />
-                <element signature="method#coinChange#0;class#DpSolution#0" />
-                <element signature="method#countBits#0;class#DpSolution#0" />
-                <element signature="method#canPartition#0;class#DpSolution#0" />
-                <element signature="method#findTargetSumWays#0;class#DpSolution#0" />
               </folding>
             </state>
           </provider>
@@ -172,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="980">
               <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
               <folding>
                 <element signature="method#inorderTraversal#0;class#HashSolution#0" />
@@ -189,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#permute#0;class#BackTraceSolution#0" />
@@ -204,9 +182,24 @@
         <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="method#searchMatrix#0;class#BinarySearch#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="232" lean-forward="true" selection-start-line="182" selection-start-column="4" selection-end-line="232" />
+              <folding>
+                <element signature="method#levelOrder#0;class#BFSSolution#0" />
+                <element signature="method#isSymmetric#0;class#BFSSolution#0" />
+                <element signature="method#numIslands#0;class#BFSSolution#0" />
+                <element signature="method#canFinish#0;class#BFSSolution#0" />
               </folding>
             </state>
           </provider>
@@ -224,7 +217,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>电话号码的字母组合</find>
       <find>回文子串</find>
       <find>最长有效括号</find>
       <find>编辑</find>
@@ -254,6 +246,7 @@
       <find>从前序与中序遍历序列构造二叉树</find>
       <find>最大矩形</find>
       <find>@return</find>
+      <find>Queue</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/com/chaoger/algori</dir>
@@ -286,16 +279,16 @@
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java" />
-        <option value="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" />
-        <option value="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" />
         <option value="$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java" />
+        <option value="$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="781" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -304,7 +297,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,12 +319,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603448223667" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603448318723" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -524,12 +517,13 @@
       <workItem from="1603097774207" duration="5068000" />
       <workItem from="1603196642599" duration="769000" />
       <workItem from="1603352157025" duration="5436000" />
-      <workItem from="1603433169926" duration="4008000" />
+      <workItem from="1603433169926" duration="4322000" />
+      <workItem from="1603529575054" duration="1366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66572000" />
+    <option name="totallyTimeSpent" value="68252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,11 +535,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7692308" visible="true" weight="0.16187434" />
-      <window_info id="Structure" order="1" sideWeight="0.23076923" side_tool="true" visible="true" weight="0.16187434" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7676923" visible="true" weight="0.16380544" />
+      <window_info id="Structure" order="1" sideWeight="0.23230769" side_tool="true" visible="true" weight="0.16380544" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -561,7 +555,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32642487" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.24559586" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.21686748" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.28882438" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32289156" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -684,126 +678,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
-          <folding>
-            <element signature="method#levelOrder#0;class#BFSSolution#0" />
-            <element signature="method#isSymmetric#0;class#BFSSolution#0" />
-            <element signature="method#numIslands#0;class#BFSSolution#0" />
-            <element signature="method#canFinish#0;class#BFSSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#mergeKLists#0;class#DivideSolution#0" />
-            <element signature="method#mergeLists#0;class#DivideSolution#0" />
-            <element signature="method#merge2List#0;class#DivideSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="method#hasCycle#0;class#DoublePointSolution#0" />
-            <element signature="method#detectCycle#0;class#DoublePointSolution#0" />
-            <element signature="method#isPalindrome#0;class#DoublePointSolution#0" />
-            <element signature="method#reverse#0;class#DoublePointSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="method#minMeetingRooms#0;class#GreedySolution#0" />
-            <element signature="method#reconstructQueue#0;class#GreedySolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
-          <folding>
-            <element signature="method#inorderTraversal#0;class#HashSolution#0" />
-            <element signature="method#inorder#0;class#HashSolution#0" />
-            <element signature="method#singleNumber#0;class#HashSolution#0" />
-            <element signature="method#topKFrequent#0;class#HashSolution#0" />
-            <element signature="method#findAnagrams#0;class#HashSolution#0" />
-            <element signature="method#dailyTemperatures#0;class#HashSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="343" column="14" lean-forward="true" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="14" />
-          <folding>
-            <element signature="method#lengthOfLongestSubstring#0;class#StringSolution#0" />
-            <element signature="method#longestPalindrome#0;class#StringSolution#0" />
-            <element signature="method#expandAroundCenter#0;class#StringSolution#0" />
-            <element signature="method#isMatch#0;class#StringSolution#0" />
-            <element signature="method#letterCombinations#0;class#StringSolution#0" />
-            <element signature="method#backTraceLetterCombinations#0;class#StringSolution#0" />
-            <element signature="method#isValid#0;class#StringSolution#0" />
-            <element signature="method#generateParenthesis#0;class#StringSolution#0" />
-            <element signature="method#backTraceGenerateParenthesis#0;class#StringSolution#0" />
-            <element signature="method#longestValidParentheses#0;class#StringSolution#0" />
-            <element signature="method#groupAnagrams#0;class#StringSolution#0" />
-            <element signature="method#minWindow#0;class#StringSolution#0" />
-            <element signature="method#countSubstrings#0;class#StringSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="method#searchMatrix#0;class#BinarySearch#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#permute#0;class#BackTraceSolution#0" />
-            <element signature="method#backTracePermute#0;class#BackTraceSolution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/ArraySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="610" column="6" lean-forward="true" selection-start-line="610" selection-start-column="6" selection-end-line="610" selection-end-column="6" />
+        <state relative-caret-position="4860">
+          <caret line="610" column="6" selection-start-line="610" selection-start-column="6" selection-end-line="610" selection-end-column="6" />
           <folding>
             <element signature="method#twoSum#0;class#ArraySolution#0" />
             <element signature="method#maxArea#0;class#ArraySolution#0" />
@@ -841,31 +720,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/GreedySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+        <state relative-caret-position="840">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
-            <element signature="method#isValidBST#0;class#DFSSolution#0" />
-            <element signature="method#compareTreeNode#0;class#DFSSolution#0" />
-            <element signature="method#maxDepth#0;class#DFSSolution#0" />
-            <element signature="method#buildTree#0;class#DFSSolution#0" />
-            <element signature="method#buildTreeHelper#0;class#DFSSolution#0" />
-            <element signature="method#rob#0;class#DFSSolution#0" />
-            <element signature="method#dfsRob#0;class#DFSSolution#0" />
-            <element signature="method#flatten#0;class#DFSSolution#0" />
-            <element signature="method#decodeString#0;class#DFSSolution#0" />
+            <element signature="method#minMeetingRooms#0;class#GreedySolution#0" />
+            <element signature="method#reconstructQueue#0;class#GreedySolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/StringSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2140">
+          <caret line="343" column="14" selection-start-line="343" selection-start-column="7" selection-end-line="343" selection-end-column="14" />
+          <folding>
+            <element signature="method#lengthOfLongestSubstring#0;class#StringSolution#0" />
+            <element signature="method#longestPalindrome#0;class#StringSolution#0" />
+            <element signature="method#expandAroundCenter#0;class#StringSolution#0" />
+            <element signature="method#isMatch#0;class#StringSolution#0" />
+            <element signature="method#letterCombinations#0;class#StringSolution#0" />
+            <element signature="method#backTraceLetterCombinations#0;class#StringSolution#0" />
+            <element signature="method#isValid#0;class#StringSolution#0" />
+            <element signature="method#generateParenthesis#0;class#StringSolution#0" />
+            <element signature="method#backTraceGenerateParenthesis#0;class#StringSolution#0" />
+            <element signature="method#longestValidParentheses#0;class#StringSolution#0" />
+            <element signature="method#groupAnagrams#0;class#StringSolution#0" />
+            <element signature="method#minWindow#0;class#StringSolution#0" />
+            <element signature="method#countSubstrings#0;class#StringSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DivideSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mergeKLists#0;class#DivideSolution#0" />
+            <element signature="method#mergeLists#0;class#DivideSolution#0" />
+            <element signature="method#merge2List#0;class#DivideSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DoublePointSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="method#hasCycle#0;class#DoublePointSolution#0" />
+            <element signature="method#detectCycle#0;class#DoublePointSolution#0" />
+            <element signature="method#isPalindrome#0;class#DoublePointSolution#0" />
+            <element signature="method#reverse#0;class#DoublePointSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/HashSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+          <folding>
+            <element signature="method#inorderTraversal#0;class#HashSolution#0" />
+            <element signature="method#inorder#0;class#HashSolution#0" />
+            <element signature="method#singleNumber#0;class#HashSolution#0" />
+            <element signature="method#topKFrequent#0;class#HashSolution#0" />
+            <element signature="method#findAnagrams#0;class#HashSolution#0" />
+            <element signature="method#dailyTemperatures#0;class#HashSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BackTraceSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#permute#0;class#BackTraceSolution#0" />
+            <element signature="method#backTracePermute#0;class#BackTraceSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="method#searchMatrix#0;class#BinarySearch#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DpSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="580">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#climbStairs#0;class#DpSolution#0" />
+            <element signature="method#minDistance#0;class#DpSolution#0" />
             <element signature="method#numTrees#0;class#DpSolution#0" />
             <element signature="method#wordBreak#0;class#DpSolution#0" />
             <element signature="method#rob#0;class#DpSolution#0" />
@@ -878,6 +836,39 @@
             <element signature="method#countBits#0;class#DpSolution#0" />
             <element signature="method#canPartition#0;class#DpSolution#0" />
             <element signature="method#findTargetSumWays#0;class#DpSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/DFSSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="method#isValidBST#0;class#DFSSolution#0" />
+            <element signature="method#compareTreeNode#0;class#DFSSolution#0" />
+            <element signature="method#maxDepth#0;class#DFSSolution#0" />
+            <element signature="method#buildTree#0;class#DFSSolution#0" />
+            <element signature="method#buildTreeHelper#0;class#DFSSolution#0" />
+            <element signature="method#maxPathSum#0;class#DFSSolution#0" />
+            <element signature="method#maxGain#0;class#DFSSolution#0" />
+            <element signature="method#rob#0;class#DFSSolution#0" />
+            <element signature="method#dfsRob#0;class#DFSSolution#0" />
+            <element signature="method#flatten#0;class#DFSSolution#0" />
+            <element signature="method#decodeString#0;class#DFSSolution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chaoger/algori/BFSSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="232" lean-forward="true" selection-start-line="182" selection-start-column="4" selection-end-line="232" />
+          <folding>
+            <element signature="method#levelOrder#0;class#BFSSolution#0" />
+            <element signature="method#isSymmetric#0;class#BFSSolution#0" />
+            <element signature="method#numIslands#0;class#BFSSolution#0" />
+            <element signature="method#canFinish#0;class#BFSSolution#0" />
           </folding>
         </state>
       </provider>

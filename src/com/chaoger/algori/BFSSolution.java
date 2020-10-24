@@ -180,5 +180,56 @@ public class BFSSolution {
      * 删除无效括号
      * @return
      */
+    public List<String> removeInvalidParentheses(String s) {
+
+        List<String> res = new ArrayList<>();
+        Queue<String> queue = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
+        queue.offer(s);
+
+        while (true) {
+            int size = queue.size();
+            //考虑当前层
+            for (int i = 0; i < size; i++) {
+                s = queue.poll();
+                if (isVaildParentheses(s)) {
+                    res.add(s);
+                } else if (res.size() == 0) {
+                    //生成下一层, 原来的基础上再多删除一个括号
+                    for (int removei = 0; removei < s.length(); removei++) {
+                        if (s.charAt(removei) == '(' || s.charAt(removei) == ')') {
+                            String nexts = s.substring(0, removei) + s.substring(removei + 1);
+                            //防止重复
+                            if (!visited.contains(nexts)) {
+                                queue.offer(nexts);
+                                visited.add(nexts);
+                            }
+                        }
+                    }
+                }
+            }
+            //出现了合法字符串，终止循环
+            if (res.size() > 0) {
+                break;
+            }
+        }
+        return res;
+    }
+
+    public boolean isVaildParentheses(String s) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                count++;
+            } else if (s.charAt(i) == ')') {
+                count--;
+            }
+            if (count < 0) {
+                return false;
+            }
+        }
+        return count == 0;
+    }
+
 
 }

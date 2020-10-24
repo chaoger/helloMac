@@ -81,6 +81,25 @@ public class DFSSolution {
      * @return
      */
 
+    //注意！不能走进一个分支又掉头回来，走另一个分支，路径重叠了，不符合要求。
+    int maxPathSum = Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+
+        maxGain(root);
+        return maxPathSum;
+
+    }
+
+    private int maxGain(TreeNode root){
+        if(root==null){
+            return 0;
+        }
+        int left = Math.max(0,maxGain(root.left));
+        int right = Math.max(0,maxGain(root.right));
+        maxPathSum = Math.max(maxPathSum,root.val+left+right);
+        return root.val+Math.max(left,right);
+
+    }
 
 
     /**
